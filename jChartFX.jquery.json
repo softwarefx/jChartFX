@@ -1,0 +1,36 @@
+{
+    "name": "jChartFX",
+    "title": "Free charts and graphs for HTML5, JQuery and Javascript",
+    "description": "jChartFX is a powerful HTML5-compliant charting component using JavaScript libraries to leverage the power of jQuery, CSS and SVG capabilities to deliver aesthetically superior charts and a richer end user experience, providing the most complete collection of charts and graphs for professional and serious business data visualization and analysis",
+    "keywords": [
+        "chart",
+        "charting",
+        "graph",
+        "graphics"
+    ],
+    "version": "7.1.4953",
+    "author": {
+        "name": "Software FX",
+        "url": "http://www.jchartfx.com"
+    },
+    "maintainers": [
+        {
+            "name": "Software FX",
+            "email": "products@softwarefx.com",
+            "url": "http://support.softwarefx.com/jChartFX"
+        }
+    ],
+    "licenses": [
+        {
+            "type": "Commercial FREE license ",
+            "url": "http://www.jchartfx.com/eula"
+        }
+    ],
+    "bugs": "http://community.jchartfx.com/forums",
+    "homepage": "http://www.jchartfx.com",
+    "docs": "http://support.softwarefx.com/jChartFX",
+    "download": "http://www.jchartfx.com/download",
+    "dependencies": {
+        "jquery": ">=1.7.1"
+    }
+}
