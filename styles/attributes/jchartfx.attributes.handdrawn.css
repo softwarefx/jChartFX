@@ -1,0 +1,406 @@
+@import url(http://fonts.googleapis.com/css?family=Shadows+Into+Light+Two);
+.jchartfx {
+    font-family: 'Shadows Into Light Two', cursive;
+    font-size: 9pt;
+}
+
+.jchartfxToolTip {
+    padding: 3px;
+    font-size: 11pt;
+	font-family: 'Shadows Into Light Two', cursive;
+    font-weight: bold;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    pointer-events: none;
+    border-style: solid;
+    border-width: 1px;
+    -webkit-font-smoothing: antialiased;
+    pointer-events: none;
+}
+
+.jchartfxToolTipVisible {
+    opacity: 1;
+    -webkit-transition: opacity 0.5s ease-in-out;
+    -moz-transition: opacity 0.5s ease-in-out;
+    -o-transition: opacity 0.5s ease-in-out;
+    -ms-transition: opacity 0.5s ease-in-out;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.jchartfxToolTipHidden {
+    opacity: 0;
+    -webkit-transition: opacity 0.5s ease-in-out;
+    -moz-transition: opacity 0.5s ease-in-out;
+    -o-transition: opacity 0.5s ease-in-out;
+    -ms-transition: opacity 0.5s ease-in-out;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.jchartfxToolTip2 {
+    pointer-events: none;
+}
+
+.jchartfxToolTip2Visible {
+    opacity: 1;
+    -webkit-transition: opacity 0.5s ease-in-out;
+    -moz-transition: opacity 0.5s ease-in-out;
+    -o-transition: opacity 0.5s ease-in-out;
+    -ms-transition: opacity 0.5s ease-in-out;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.jchartfxToolTip2Hidden {
+    opacity: 0;
+    -webkit-transition: opacity 0.5s ease-in-out;
+    -moz-transition: opacity 0.5s ease-in-out;
+    -o-transition: opacity 0.5s ease-in-out;
+    -ms-transition: opacity 0.5s ease-in-out;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.jchartfx .Attribute0 {
+    stroke-width: 1;
+}
+
+.jchartfx .Attribute0Line {
+    stroke-width: 1;
+}
+
+.jchartfx .Attribute1 {
+    stroke-width: 1;
+}
+
+.jchartfx .Attribute1Line {
+    stroke-width: 1;
+}
+
+.jchartfx .Attribute2 {
+    stroke-width: 1;
+}
+
+.jchartfx .Attribute2Line {
+    stroke-width: 1;
+}
+
+.jchartfx .Attribute3 {
+    stroke-width: 1;
+}
+
+.jchartfx .Attribute3Line {
+    stroke-width: 1;
+}
+
+.jchartfx .Attribute4 {
+    stroke-width: 1;
+}
+
+.jchartfx .Attribute4Line {
+    stroke-width: 1;
+}
+
+.jchartfx .Attribute5 {
+    stroke-width: 1;
+}
+
+.jchartfx .Attribute5Line {
+    stroke-width: 1;
+}
+
+.jchartfx .Attribute6 {
+    stroke-width: 1;
+}
+
+.jchartfx .Attribute6Line {
+    stroke-width: 1;
+}
+
+.jchartfx .Attribute7 {
+    stroke-width: 1;
+}
+
+.jchartfx .Attribute7Line {
+    stroke-width: 1;
+}
+
+.jchartfx .Attribute8 {
+    stroke-width: 1;
+}
+
+.jchartfx .Attribute8Line {
+    stroke-width: 1;
+}
+
+.jchartfx .Attribute9 {
+    stroke-width: 1;
+}
+
+.jchartfx .Attribute9Line {
+    stroke-width: 1;
+}
+
+.jchartfx .Attribute10 {
+    stroke-width: 1;
+}
+
+.jchartfx .Attribute10Line {
+    stroke-width: 1;
+}
+
+.jchartfx .Attribute11 {
+    stroke-width: 1;
+}
+
+.jchartfx .Attribute11Line {
+    stroke-width: 1;
+}
+
+.jchartfx .Attribute12 {
+    stroke-width: 1;
+}
+
+.jchartfx .Attribute12Line {
+    stroke-width: 1;
+}
+
+.jchartfx .Attribute13 {
+    stroke-width: 1;
+}
+
+.jchartfx .Attribute13Line {
+    stroke-width: 1;
+}
+
+.jchartfx .Attribute14 {
+    stroke-width: 1;
+}
+
+.jchartfx .Attribute14Line {
+    stroke-width: 1;
+}
+
+.jchartfx .Attribute15 {
+    stroke-width: 1;
+}
+
+.jchartfx .Attribute15Line {
+    stroke-width: 1;
+}
+
+.jchartfx .MarkerHollow {
+    stroke-width: 2;
+}
+
+.jchartfx .Marker {
+    stroke-width: 2;
+}
+
+.jchartfx .Border {
+    stroke-width: 1;
+}
+
+.jchartfx .PlotArea {
+    stroke-width: 1;
+}
+
+.jchartfx .PlotArea3D {
+    stroke-width: 1;
+}
+
+.jchartfx .Title {
+    stroke-width: 1;
+}
+
+.jchartfx .AxisLine {
+    stroke-width: 2;
+}
+
+.jchartfx .Title {
+    font-size: 11pt;
+}
+
+.jchartfx .LegendBox {
+    stroke-width: 1;
+}
+
+.jchartfx .ScrollBar {
+    stroke-width: 1;
+}
+
+.jchartfx .LoopMarker {
+    stroke-width: 2;
+}
+
+.jchartfx .EqualizerTop0 {
+    stroke-width: 1;
+}
+
+.jchartfx .EqualizerTop1 {
+    stroke-width: 1;
+}
+
+.jchartfx .EqualizerOff {
+    stroke-width: 1;
+}
+
+.jchartfx .AnnotationText {
+    font-size: 18pt;
+}
+
+.jchartfx .MapContext {
+    stroke-width: 1;
+}
+
+.jchartfx .MapWater {
+    stroke-width: 1;
+}
+
+.jchartfx .MapAttribute0 {
+    stroke-width: 1;
+}
+
+.jchartfx .MapAttribute1 {
+    stroke-width: 1;
+}
+
+.jchartfx .MapAttribute2 {
+    stroke-width: 1;
+}
+
+.jchartfx .MapAttribute3 {
+    stroke-width: 1;
+}
+
+.jchartfx .MapAttribute4 {
+    stroke-width: 1;
+}
+
+.jchartfx .MapAttribute5 {
+    stroke-width: 1;
+}
+
+.jchartfx .MapAttribute6 {
+    stroke-width: 1;
+}
+
+.jchartfx .MapAttribute7 {
+    stroke-width: 1;
+}
+
+.jchartfx .MapRoad {
+    stroke-width: 1;
+}
+
+.jchartfx .MapRoadBack {
+    stroke-width: 3;
+}
+
+.jchartfx .MapRoad0 {
+    stroke-width: 1;
+}
+
+.jchartfx .MapRoad0Back {
+    stroke-width: 3;
+}
+
+.jchartfx .MapRoad1 {
+    stroke-width: 1;
+}
+
+.jchartfx .MapRoad1Back {
+    stroke-width: 0;
+}
+
+.jchartfx .MapTranslationArea {
+    stroke-width: 1;
+}
+
+.jchartfx_gauge .Border {
+    stroke-width: 1;
+}
+
+.jchartfx_gauge .Text {
+    font-family: 'Shadows Into Light Two', cursive;
+    font-size: 9pt;
+}
+
+.jchartfx_gauge .Title {
+    font-family: 'Shadows Into Light Two', cursive;
+    font-size: 12pt;
+}
+
+.jchartfx_gauge .TitleLarge {
+    font-family: 'Shadows Into Light Two', cursive;
+    font-size: 45pt;
+}
+
+.jchartfx_gauge .Separator {
+    stroke-width: 1;
+}
+
+.jchartfx .DashboardTitle {
+    font-family: 'Shadows Into Light Two', cursive;
+    font-size: 12pt;
+}
+
+.jchartfx_gauge .DashboardTitle {
+    font-family: 'Shadows Into Light Two', cursive;
+    font-size: 12pt;
+}
+
+.jchartfx_container, .jchartfx_container *
+{  
+    font-family: 'Shadows Into Light Two', cursive;
+
+}
+
+.jchartfx_container table
+{ 
+    border:0px solid; 
+    font-size:12pt; 
+    margin:40px 5%;  
+    width:90%; 
+    border-spacing: 0px;
+    background-color: transparent !important;
+    box-shadow: none !important;
+}
+
+.jchartfx_container table thead tr th
+{
+    border:0px solid;  
+    border-bottom:0px solid; 
+    text-align: left; 
+    padding:3px; 
+    font-weight: bold;
+    background-color: transparent !important;
+}
+
+.jchartfx_container table tbody tr td
+{
+    padding:3px; 
+    border:0px solid;
+    background-color: transparent !important;
+}
+
+.jchartfx_container .labelIndicator 
+{
+    text-align:center;
+    margin-top: 44px;
+    font-size:34pt; 
+    line-height:1em;
+}
+
+
+
+.jchartfx_container .label {
+    text-align: center;
+    vertical-align:middle;
+    font-size: 24pt;
+    line-height:1em;
+}
+
+.jchartfx_container .smallLabel {
+    font-size: 12pt;
+    text-align: center;
+    vertical-align:middle;
+    line-height:1em;
+}
