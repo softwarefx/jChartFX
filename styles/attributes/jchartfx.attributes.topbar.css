@@ -1,6 +1,7 @@
 .jchartfx {
     font-family: Arial;
     font-size: 8pt;
+    line-height: normal;
 }
 
 .jchartfxToolTip {
@@ -165,36 +166,19 @@
     stroke-width: 1;
 }
 
-.jchartfx_gauge .Border {
-    stroke-width: 1;
-}
-
-.jchartfx_gauge .Text {
-    font-family: Arial;
-    font-size: 8pt;
-}
-
-.jchartfx_gauge .Title {
-    font-family: Arial;
+.jchartfx .GaugeTitle {
     font-size: 10pt;
 }
 
-.jchartfx_gauge .TitleLarge {
-    font-family: Arial;
+.jchartfx .GaugeTitleLarge {
     font-size: 40pt;
 }
 
-.jchartfx_gauge .Separator {
+.jchartfx .Separator {
     stroke-width: 1;
 }
 
 .jchartfx .DashboardTitle {
-    font-family: Arial;
-    font-size: 11pt;
-}
-
-.jchartfx_gauge .DashboardTitle {
-    font-family: Arial;
     font-size: 11pt;
 }
 
@@ -250,14 +234,6 @@
     line-height:1em;
 }
 
-.jchartfx_gauge .BorderMedium {
-    stroke-width: 4;
-}
-
-.jchartfx_gauge .BorderThick {
-    stroke-width: 8;
-}
-
 .jchartfx .BorderMedium {
     stroke-width: 4;
 }
@@ -298,38 +274,6 @@
     stroke-width: 1;
 }
 
-.jchartfx_gauge .Border0 {
-    stroke-width: 1;
-}
-
-.jchartfx_gauge .Border1 {
-    stroke-width: 1;
-}
-
-.jchartfx_gauge .Border2 {
-    stroke-width: 1;
-}
-
-.jchartfx_gauge .Border3 {
-    stroke-width: 1;
-}
-
-.jchartfx_gauge .Border4 {
-    stroke-width: 1;
-}
-
-.jchartfx_gauge .Border5 {
-    stroke-width: 1;
-}
-
-.jchartfx_gauge .Border6 {
-    stroke-width: 1;
-}
-
-.jchartfx_gauge .Border7 {
-    stroke-width: 1;
-}
-
 .jchartfx-menu-callout {
   border: 0px solid;
   border-radius: 0px;
@@ -341,4 +285,4 @@
   border-radius: 0px;
    -webkit-box-shadow: 3px 3px 3px 0 rgba(0, 0, 0, 0.25);
   box-shadow: 3px 3px 3px 0 rgba(0, 0, 0, 0.25);
- }
+}

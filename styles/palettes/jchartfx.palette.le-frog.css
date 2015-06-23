@@ -13,6 +13,10 @@
     stroke: #FFFFFF;
 }
 
+.jchartfx .PointLabel {
+    fill: #FFFFFF;
+}
+
 .jchartfx .Attribute0 {
     fill: #285C00;
     stroke: #1E4500;
@@ -298,10 +302,6 @@
     stroke: #45930B;
 }
 
-.jchartfx .PointLabel {
-    fill: #FFFFFF;
-}
-
 .jchartfx .PointLabelBorder {
     fill: #C0C0C0;
     stroke: #FFFFFF;
@@ -430,71 +430,54 @@
     fill: #FBF5D0;
 }
 
-.jchartfx_gauge .Border {
-    fill: #285C00;
-    stroke: #72B42D;
-}
-
-.jchartfx_gauge .Indicator {
+.jchartfx .Indicator {
     fill: #FFDC2E;
     stroke: #C0A523;
 }
 
-.jchartfx_gauge .Cap {
+.jchartfx .Cap {
     fill: #FFFFFF;
 }
 
-.jchartfx_gauge .Bar {
+.jchartfx .Bar {
     stroke: #45930B;
     fill: #FFFFFF;
 }
 
-.jchartfx_gauge .TickMajor {
-    stroke: #45930B;
-    fill: #45930B;
-}
-
-.jchartfx_gauge .TickMedium {
+.jchartfx .TickMajor {
     stroke: #45930B;
     fill: #45930B;
 }
 
-.jchartfx_gauge .Text {
+.jchartfx .TickMedium {
+    stroke: #45930B;
+    fill: #45930B;
+}
+
+.jchartfx .GaugeText {
     fill: #FFFFFF;
 }
 
-.jchartfx_gauge .Title {
+.jchartfx .GaugeTitle {
     fill: #FFFFFF;
 }
 
-.jchartfx_gauge .Section0 {
+.jchartfx .GaugeSection0 {
     fill: #CD0A0A;
     stroke: #9A0808;
 }
 
-.jchartfx_gauge .Section1 {
+.jchartfx .GaugeSection1 {
     fill: #FFDC2E;
     stroke: #C0A523;
 }
 
-.jchartfx_gauge .Section2 {
+.jchartfx .GaugeSection2 {
     fill: #8BD83B;
     stroke: #69A22D;
 }
 
-.jchartfx_gauge .GreaterThan {
-    fill: #8BD83B;
-}
-
-.jchartfx_gauge .LessThan {
-    fill: #CD0A0A;
-}
-
-.jchartfx_gauge .EqualsTo {
-    fill: #FFDC2E;
-}
-
-.jchartfx_gauge .Separator {
+.jchartfx .Separator {
     stroke: #45930B;
 }
 
@@ -624,7 +607,7 @@
     fill-opacity: 0;
 }
 
-.jchartfx_gauge .TitleLarge {
+.jchartfx .GaugeTitleLarge {
     fill: #FFFFFF;
 }
 
@@ -636,16 +619,7 @@
     fill: #FFFFFF;
 }
 
-.jchartfx_gauge .DashboardTitle {
-    fill: #FFFFFF;
-}
-
 .jchartfx .DashboardCaption {
-    fill: #FFDC2E;
-    stroke: #285C00;
-}
-
-.jchartfx_gauge .DashboardCaption {
     fill: #FFDC2E;
     stroke: #285C00;
 }
@@ -659,20 +633,10 @@
     fill: #EBF4E3;
 }
 
-.jchartfx_gauge .Glow {
-    fill: #EBF4E3;
-}
-
 .jchartfx .MapShadow {
     fill: #EBF4E3;
     fill-opacity: 0.3;
 }
-
-
-
-
-
-
 
 .jchartfx .BorderEffect1 {
     fill: #AAAAAA;
@@ -730,32 +694,22 @@
     color: #FFFFFF;
 }
 
-.jchartfx_gauge .BorderMedium {
-    fill: #285C00;
-    stroke: #72B42D;
-}
-
-.jchartfx_gauge .BorderThick {
-    fill: #285C00;
-    stroke: #72B42D;
-}
-
 .jchartfx .MapDefaultAttribute {
     fill: #285c00;
     stroke: #032d00;
 }
 
-.jchartfx_gauge .Filler {
+.jchartfx .Filler {
     fill: #FFDC2E;
     stroke: #C0A523;
 }
 
-.jchartfx_gauge .Marker {
+.jchartfx .GaugeMarker {
     fill: #285C00;
     stroke: #1E4500;
 }
 
-.jchartfx_gauge .Needle {
+.jchartfx .Needle {
     fill: #FFDC2E;
     stroke: #C0A523;
 }
@@ -810,52 +764,12 @@
     fill: #5E4E00;
 }
 
-.jchartfx_gauge .Border0  {
-    stroke: #0F2200;
-    fill: #0F2200;
-}
-
-.jchartfx_gauge .Border1  {
-    stroke: #606060;
-    fill: #606060;
-}
-
-.jchartfx_gauge .Border2  {
-    stroke: #5E5C4E;
-    fill: #5E5C4E;
-}
-
-.jchartfx_gauge .Border3  {
-    stroke: #605211;
-    fill: #605211;
-}
-
-.jchartfx_gauge .Border4  {
-    stroke: #141414;
-    fill: #141414;
-}
-
-.jchartfx_gauge .Border5  {
-    stroke: #345116;
-    fill: #345116;
-}
-
-.jchartfx_gauge .Border6  {
-    stroke: #4D0404;
-    fill: #4D0404;
-}
-
-.jchartfx_gauge .Border7  {
-    stroke: #5E4E00;
-    fill: #5E4E00;
-}
-
 .jchartfx-menu-callout:hover {
   color: #285C00;
 }
 
 .jchartfx-menu {
-  border-color: rgba(139, 139, 139, 0.8);
+  border-color: #72B42D;
   background-color: rgba(33, 73, 0, 0.9);
    -webkit-box-shadow: rgba(0, 0, 0, 0.25);
   box-shadow: rgba(0, 0, 0, 0.25);
@@ -907,15 +821,96 @@
   cursor: not-allowed;
 }
 
-
 .jchartfx .GreaterThan {
+    fill: #8BD83B;
     stroke: #8BD83B;
 }
 
 .jchartfx .LessThan {
+    fill: #CD0A0A;
     stroke: #CD0A0A;
 }
 
 .jchartfx .EqualsTo {
+    fill: #FFDC2E;
     stroke: #FFDC2E;
+}
+
+.jchartfx .InsideLabel0 {
+    fill: #4EB500;
+}
+
+.jchartfx .InsideLabel1 {
+    fill: #606060;
+}
+
+.jchartfx .InsideLabel2 {
+    fill: #5E5C4E;
+}
+
+.jchartfx .InsideLabel3 {
+    fill: #605211;
+}
+
+.jchartfx .InsideLabel4 {
+    fill: #8A8A8A;
+}
+
+.jchartfx .InsideLabel5 {
+    fill: #345116;
+}
+
+.jchartfx .InsideLabel6 {
+    fill: #FF5050;
+}
+
+.jchartfx .InsideLabel7 {
+    fill: #FFFF00;
+}
+
+.jchartfx .InsideLabel8 {
+    fill: #344825;
+}
+
+.jchartfx .InsideLabel9 {
+    fill: #606037;
+}
+
+.jchartfx .InsideLabel10 {
+    fill: #3A3A3A;
+}
+
+.jchartfx .InsideLabel11 {
+    fill: #602929;
+}
+
+.jchartfx .InsideLabel12 {
+    fill: #606025;
+}
+
+.jchartfx .InsideLabel13 {
+    fill: #393628;
+}
+
+.jchartfx .InsideLabel14 {
+    fill: #FFC800;
+}
+
+.jchartfx .InsideLabel15 {
+    fill: #AF0000;
+}
+
+.jchartfx .EmptyMarker {
+    stroke: #2D5E07;
+    fill: #45930B;
+}
+
+.jchartfx .Repeater {
+    fill: #285C00;
+    stroke: #1E4500;
+}
+
+.jchartfx .RepeaterOff {
+    fill: #8EC266;
+    stroke: #8EC266;
 }

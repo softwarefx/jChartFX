@@ -1,0 +1,11 @@
+{
+  "name"        : "jchartfx",
+  "version"     : "7.4.5649",
+  "homepage"    : "https://github.com/softwarefx/jchartfx",
+  "description" : "Creates JavaScript Charts, Gauges and Maps",
+  "main"        : ["js/jchartfx.system.js", "js/jchartfx.coreVector.js"],
+  "authors"     : [{"name": "Software FX", "email": "products@softwarefx.com"}],
+  "keywords"    : ["chart", "charting", "graph", "graphics", "data", "visualization", "gauges", "maps", "geographic", "plot", "javascript", "dashboard", "bi"],
+  "license"     : "http://jchartfx.com/eula",
+  "ignore"      : ["*.md", ".*", "**/.*", "package.json", "jChartFX.jquery.json"]
+}

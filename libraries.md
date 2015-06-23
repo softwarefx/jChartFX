@@ -118,6 +118,11 @@ Contains the OverlayBubble gallery
 Contains the Pareto Chart gallery
 
 
+**jchartfx.pictograph.js**
+-----------------------
+Contains the PictoGraph Control, the PictoGraph extension and the PictoBar extension
+
+
 **jchartfx.pyramid.js**
 -----------------------
 Contains the Pyramid gallery

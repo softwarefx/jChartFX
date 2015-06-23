@@ -1,6 +1,7 @@
 .jchartfx {
     font-family: Helvetica, Arial, sans-serif;
     font-size: 8pt;
+    line-height: normal;
 }
 
 .jchartfxToolTip {
@@ -116,26 +117,15 @@
     stroke-width: 1;
 }
 
-.jchartfx_gauge .Border {
-    stroke-width: 1;
-}
-
-.jchartfx_gauge .Text {
-    font-family: Helvetica, Arial, sans-serif;
-    font-size: 8pt;
-}
-
-.jchartfx_gauge .Title {
-    font-family: Helvetica, Arial, sans-serif;
+.jchartfx .GaugeTitle {
     font-size: 10pt;
 }
 
-.jchartfx_gauge .TitleLarge {
-    font-family: Helvetica, Arial, sans-serif;
+.jchartfx .GaugeTitleLarge {
     font-size: 24pt;
 }
 
-.jchartfx_gauge .Separator {
+.jchartfx .Separator {
     stroke-width: 1;
 }
 
@@ -177,12 +167,6 @@
 
 .jchartfx .DashboardTitle {
     font-size: 9pt;
-    font-family: Helvetica, Arial, sans-serif;
-}
-
-.jchartfx_gauge .DashboardTitle {
-    font-size: 9pt;
-    font-family: Helvetica, Arial, sans-serif;
 }
 
 .jchartfx_container, .jchartfx_container *
@@ -238,14 +222,6 @@
     line-height:1em;
 }
 
-.jchartfx_gauge .BorderMedium {
-    stroke-width: 4;
-}
-
-.jchartfx_gauge .BorderThick {
-    stroke-width: 8;
-}
-
 .jchartfx .BorderMedium {
     stroke-width: 4;
 }
@@ -286,42 +262,10 @@
     stroke-width: 1;
 }
 
-.jchartfx_gauge .Border0 {
-    stroke-width: 1;
-}
-
-.jchartfx_gauge .Border1 {
-    stroke-width: 1;
-}
-
-.jchartfx_gauge .Border2 {
-    stroke-width: 1;
-}
-
-.jchartfx_gauge .Border3 {
-    stroke-width: 1;
-}
-
-.jchartfx_gauge .Border4 {
-    stroke-width: 1;
-}
-
-.jchartfx_gauge .Border5 {
-    stroke-width: 1;
-}
-
-.jchartfx_gauge .Border6 {
-    stroke-width: 1;
-}
-
-.jchartfx_gauge .Border7 {
-    stroke-width: 1;
-}
-
 .jchartfx-menu-callout {
   border: 1px solid;
   border-radius: 0px;
-  font-size: 16px;
+  font-size: 13px !important;
 }
 
 .jchartfx-menu {
@@ -334,4 +278,13 @@
  .jchartfx-menu .cfxcombo {
     font-family: Helvetica, Arial, sans-serif;
     font-size: 8pt;
+}
+
+.jchartfx .StackedLabel {
+    font-size: 9pt;
+	font-weight: bold;
+}
+
+.jchartfx-icon-menu:before {
+    content: "\e654";
 }

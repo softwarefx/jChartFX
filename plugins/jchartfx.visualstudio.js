@@ -194,6 +194,7 @@ BubbleAnimation._isCFXEnum = true;
 cfx.BubbleAnimation = BubbleAnimation;
 
 var ChartStyles = {
+    NoLegInvalidate: 8,
     PaintMarker: 32,
     OnlyChart: 64,
     SideBySide: 256,
@@ -538,7 +539,7 @@ bs.prototype = {
     getColors: function () {
         /// <summary>Gets a collection of colors to be used for the colors of the surface plot.</summary>
         /// <returns type="Color[]"/>
-        return new Color[]();
+        return new Array();
     },
     setColors: function (value) {
         /// <summary>Sets a collection of colors to be used for the colors of the surface plot.</summary>
@@ -829,8 +830,8 @@ GradientBackground.prototype = {
     },
     getColorFrom: function () {
         /// <summary>Gets the beginning color of a gradient.</summary>
-        /// <returns type="Object"/>
-        return new ();
+        /// <returns type="string"/>
+        return "";
     },
     setColorFrom: function (value) {
         /// <summary>Sets the beginning color of a gradient.</summary>
@@ -842,8 +843,8 @@ GradientBackground.prototype = {
     },
     getColorTo: function () {
         /// <summary>Ending color of a gradient.</summary>
-        /// <returns type="Object"/>
-        return new ();
+        /// <returns type="string"/>
+        return "";
     },
     setColorTo: function (value) {
         /// <summary>Ending color of a gradient.</summary>
@@ -874,6 +875,44 @@ GradientBackground.prototype = {
     setType: function (value) {
         /// <summary>Sets the style of the gradient for a selected gradient background.</summary>
         /// <param name="value" type="cfx.GradientType"/>>
+    }
+};
+var bJ = function() {
+}
+cfx.bJ = bJ;
+bJ.prototype = {
+    getItem: function (n) {
+        /// <param name="n" type="number"/>>
+        /// <returns type="number"/>
+        return 0;
+    },
+    setItem: function (n, value) {
+        /// <param name="n" type="number"/>>
+        /// <param name="value" type="number"/>>
+    },
+    add: function (f) {
+        /// <param name="f" type="number"/>>
+    },
+    clear: function () {
+    }
+};
+var bK = function() {
+}
+cfx.bK = bK;
+bK.prototype = {
+    getItem: function (n) {
+        /// <param name="n" type="number"/>>
+        /// <returns type="string"/>
+        return "";
+    },
+    setItem: function (n, value) {
+        /// <param name="n" type="number"/>>
+        /// <param name="value" type="String"/>>
+    },
+    add: function (color) {
+        /// <param name="color" type="String"/>>
+    },
+    clear: function () {
     }
 };
 
@@ -1030,8 +1069,8 @@ LegendItemAttributes.prototype = {
     },
     getTextColor: function () {
         /// <summary>Gets a value allowing you to set the text color for the legend item.</summary>
-        /// <returns type="Object"/>
-        return new ();
+        /// <returns type="string"/>
+        return "";
     },
     setTextColor: function (value) {
         /// <summary>Sets a value allowing you to set the text color for the legend item.</summary>
@@ -1094,8 +1133,8 @@ cfx.CustomLegendItem = CustomLegendItem;
 CustomLegendItem.prototype = {
     getAlternateColor: function () {
         /// <summary>Gets the background color of a custom legend item marker when a pattern is configured using the Pattern property.</summary>
-        /// <returns type="Object"/>
-        return new ();
+        /// <returns type="string"/>
+        return "";
     },
     setAlternateColor: function (value) {
         /// <summary>Sets the background color of a custom legend item marker when a pattern is configured using the Pattern property.</summary>
@@ -1117,8 +1156,8 @@ CustomLegendItem.prototype = {
     },
     getColor: function () {
         /// <summary>Gets the Color for the marker of the Custom Legend Item.</summary>
-        /// <returns type="Object"/>
-        return new ();
+        /// <returns type="string"/>
+        return "";
     },
     setColor: function (value) {
         /// <summary>Sets the Color for the marker of the Custom Legend Item.</summary>
@@ -1303,8 +1342,8 @@ cfx.CellAttributes = CellAttributes;
 CellAttributes.prototype = {
     getBackColor: function () {
         /// <summary>Sets the background color for a particular Cell or entire Row in the DataGrid.</summary>
-        /// <returns type="Object"/>
-        return new ();
+        /// <returns type="string"/>
+        return "";
     },
     setBackColor: function (value) {
         /// <summary>Sets the background color for a particular Cell or entire Row in the DataGrid.</summary>
@@ -1312,8 +1351,8 @@ CellAttributes.prototype = {
     },
     getBorderColor: function () {
         /// <summary>Allows you to set the color of the border for a particular Cell or entire Row in the DataGrid.</summary>
-        /// <returns type="Object"/>
-        return new ();
+        /// <returns type="string"/>
+        return "";
     },
     setBorderColor: function (value) {
         /// <summary>Allows you to set the color of the border for a particular Cell or entire Row in the DataGrid.</summary>
@@ -1339,8 +1378,8 @@ CellAttributes.prototype = {
     },
     getTextColor: function () {
         /// <summary>Allows you to set the text color for a particular Cell or entire Row in the DataGrid.</summary>
-        /// <returns type="Object"/>
-        return new ();
+        /// <returns type="string"/>
+        return "";
     },
     setTextColor: function (value) {
         /// <summary>Allows you to set the text color for a particular Cell or entire Row in the DataGrid.</summary>
@@ -2036,8 +2075,8 @@ ca.prototype = {
     },
     getBackColor: function () {
         /// <summary>Gets a value for the background color of a dockable bar.</summary>
-        /// <returns type="Object"/>
-        return new ();
+        /// <returns type="string"/>
+        return "";
     },
     setBackColor: function (value) {
         /// <summary>Sets a value for the background color of a dockable bar.</summary>
@@ -2060,8 +2099,8 @@ cfx.cb = cb;
 cb.prototype = {
     getBackColorData: function () {
         /// <summary>Sets the background color of the cells on the data grid.</summary>
-        /// <returns type="Object"/>
-        return new ();
+        /// <returns type="string"/>
+        return "";
     },
     setBackColorData: function (value) {
         /// <summary>Sets the background color of the cells on the data grid.</summary>
@@ -2069,8 +2108,8 @@ cb.prototype = {
     },
     getBackColorDataAlternate: function () {
         /// <summary>Assigns the alternate color for displaying the DataGrid rows or columns.</summary>
-        /// <returns type="Object"/>
-        return new ();
+        /// <returns type="string"/>
+        return "";
     },
     setBackColorDataAlternate: function (value) {
         /// <summary>Assigns the alternate color for displaying the DataGrid rows or columns.</summary>
@@ -2078,8 +2117,8 @@ cb.prototype = {
     },
     getBackColorHeader: function () {
         /// <summary>Sets the background color of the header for the Data Editor.</summary>
-        /// <returns type="Object"/>
-        return new ();
+        /// <returns type="string"/>
+        return "";
     },
     setBackColorHeader: function (value) {
         /// <summary>Sets the background color of the header for the Data Editor.</summary>
@@ -2118,8 +2157,8 @@ cb.prototype = {
     },
     getHorizontalGridColor: function () {
         /// <summary>Allows you to set the Horizontal color for the gridlines displayed in the data grid.</summary>
-        /// <returns type="Object"/>
-        return new ();
+        /// <returns type="string"/>
+        return "";
     },
     setHorizontalGridColor: function (value) {
         /// <summary>Allows you to set the Horizontal color for the gridlines displayed in the data grid.</summary>
@@ -2195,8 +2234,8 @@ cb.prototype = {
     },
     getTextColorData: function () {
         /// <summary>Sets the text color of the cells on the data grid.</summary>
-        /// <returns type="Object"/>
-        return new ();
+        /// <returns type="string"/>
+        return "";
     },
     setTextColorData: function (value) {
         /// <summary>Sets the text color of the cells on the data grid.</summary>
@@ -2204,8 +2243,8 @@ cb.prototype = {
     },
     getTextColorDataAlternate: function () {
         /// <summary>Sets the alternate text color for text in the data grid cells.</summary>
-        /// <returns type="Object"/>
-        return new ();
+        /// <returns type="string"/>
+        return "";
     },
     setTextColorDataAlternate: function (value) {
         /// <summary>Sets the alternate text color for text in the data grid cells.</summary>
@@ -2213,12 +2252,19 @@ cb.prototype = {
     },
     getTextColorHeader: function () {
         /// <summary>Gets the text color of the headers on the data editor.</summary>
-        /// <returns type="Object"/>
-        return new ();
+        /// <returns type="string"/>
+        return "";
     },
     setTextColorHeader: function (value) {
         /// <summary>Sets the text color of the headers on the data editor.</summary>
         /// <param name="value" type="String"/>>
+    },
+    getTransposed: function () {
+        /// <returns type="bool"/>
+        return true;
+    },
+    setTransposed: function (value) {
+        /// <param name="value" type="bool"/>>
     },
     getUseRawData: function () {
         /// <summary>Gets a value indicating whether to use raw data or use calculated values in the DataEditor.</summary>
@@ -2231,8 +2277,8 @@ cb.prototype = {
     },
     getVerticalGridColor: function () {
         /// <summary>Allows you to select the Vertical line color for the gridline displayed at the data editor box.</summary>
-        /// <returns type="Object"/>
-        return new ();
+        /// <returns type="string"/>
+        return "";
     },
     setVerticalGridColor: function (value) {
         /// <summary>Allows you to select the Vertical line color for the gridline displayed at the data editor box.</summary>
@@ -2258,8 +2304,8 @@ cb.prototype = {
     },
     getBackColor: function () {
         /// <summary>Gets a value for the background color of a dockable bar.</summary>
-        /// <returns type="Object"/>
-        return new ();
+        /// <returns type="string"/>
+        return "";
     },
     setBackColor: function (value) {
         /// <summary>Sets a value for the background color of a dockable bar.</summary>
@@ -2350,8 +2396,8 @@ LegendBox.prototype = {
         /// <param name="value" type="cfx.LegendBoxStyles"/>>
     },
     getTextColor: function () {
-        /// <returns type="Object"/>
-        return new ();
+        /// <returns type="string"/>
+        return "";
     },
     setTextColor: function (value) {
         /// <param name="value" type="String"/>>
@@ -2373,8 +2419,8 @@ LegendBox.prototype = {
     },
     getBackColor: function () {
         /// <summary>Gets a value for the background color of a dockable bar.</summary>
-        /// <returns type="Object"/>
-        return new ();
+        /// <returns type="string"/>
+        return "";
     },
     setBackColor: function (value) {
         /// <summary>Sets a value for the background color of a dockable bar.</summary>
@@ -2397,26 +2443,26 @@ cfx.cg = cg;
 cg.prototype = {
     getItem: function (n) {
         /// <param name="n" type="number"/>>
-        /// <returns type="?"/>
-        return new ?();
+        /// <returns type="object"/>
+        return new object();
     },
     add: function (obj) {
-        /// <param name="obj" type="?"/>>
+        /// <param name="obj" type="object"/>>
     },
     clear: function () {
     },
     find: function (type) {
         /// <param name="type" type="Type"/>>
-        /// <returns type="?"/>
-        return new ?();
+        /// <returns type="object"/>
+        return new object();
     },
     indexOf: function (extension) {
-        /// <param name="extension" type="?"/>>
+        /// <param name="extension" type="object"/>>
         /// <returns type="number"/>
         return 0;
     },
     remove: function (obj) {
-        /// <param name="obj" type="?"/>>
+        /// <param name="obj" type="object"/>>
     }
 };
 
@@ -2499,8 +2545,8 @@ cj.prototype = {
     },
     getColor: function () {
         /// <summary>Gets the color of the border of a point marker.</summary>
-        /// <returns type="Object"/>
-        return new ();
+        /// <returns type="string"/>
+        return "";
     },
     setColor: function (value) {
         /// <summary>Sets the color of the border of a point marker.</summary>
@@ -2577,8 +2623,8 @@ ck.prototype = {
     },
     getBackColor: function () {
         /// <summary>Gets the backgrond color of the point label.</summary>
-        /// <returns type="Object"/>
-        return new ();
+        /// <returns type="string"/>
+        return "";
     },
     setBackColor: function (value) {
         /// <summary>Sets the backgrond color of the point label.</summary>
@@ -2595,8 +2641,8 @@ ck.prototype = {
     },
     getBorderColor: function () {
         /// <summary>Gets the border color of the point label.</summary>
-        /// <returns type="Object"/>
-        return new ();
+        /// <returns type="string"/>
+        return "";
     },
     setBorderColor: function (value) {
         /// <summary>Sets the border color of the point label.</summary>
@@ -2658,16 +2704,16 @@ ck.prototype = {
     },
     getTextColor: function () {
         /// <summary>Gets a value for the point label color.</summary>
-        /// <returns type="Object"/>
-        return new ();
+        /// <returns type="string"/>
+        return "";
     },
     setTextColor: function (value) {
         /// <summary>Sets a value for the point label color.</summary>
         /// <param name="value" type="String"/>>
     },
     getTextInsideColor: function () {
-        /// <returns type="Object"/>
-        return new ();
+        /// <returns type="string"/>
+        return "";
     },
     setTextInsideColor: function (value) {
         /// <param name="value" type="String"/>>
@@ -2689,8 +2735,8 @@ cfx.PointAttributes = PointAttributes;
 PointAttributes.prototype = {
     getAlternateColor: function () {
         /// <summary>Gets the alternate color for a selected item when using gradient FillMode.</summary>
-        /// <returns type="Object"/>
-        return new ();
+        /// <returns type="string"/>
+        return "";
     },
     setAlternateColor: function (value) {
         /// <summary>Sets the alternate color for a selected item when using gradient FillMode.</summary>
@@ -2712,8 +2758,8 @@ PointAttributes.prototype = {
     },
     getColor: function () {
         /// <summary>Allows you to set a color for the selected item.</summary>
-        /// <returns type="Object"/>
-        return new ();
+        /// <returns type="string"/>
+        return "";
     },
     setColor: function (value) {
         /// <summary>Allows you to set a color for the selected item.</summary>
@@ -2819,12 +2865,12 @@ PointAttributes.prototype = {
     },
     getTag: function () {
         /// <summary>Gets and object for the specific item.</summary>
-        /// <returns type="?"/>
-        return new ?();
+        /// <returns type="object"/>
+        return new object();
     },
     setTag: function (value) {
         /// <summary>Sets and object for the specific item.</summary>
-        /// <param name="value" type="?"/>>
+        /// <param name="value" type="object"/>>
     },
     getText: function () {
         /// <summary>Gets a value for labeling the point or series attribute.</summary>
@@ -2899,8 +2945,8 @@ ConditionalAttributes.prototype = {
     },
     getAlternateColor: function () {
         /// <summary>Gets the alternate color for a selected item when using gradient FillMode.</summary>
-        /// <returns type="Object"/>
-        return new ();
+        /// <returns type="string"/>
+        return "";
     },
     setAlternateColor: function (value) {
         /// <summary>Sets the alternate color for a selected item when using gradient FillMode.</summary>
@@ -2922,8 +2968,8 @@ ConditionalAttributes.prototype = {
     },
     getColor: function () {
         /// <summary>Allows you to set a color for the selected item.</summary>
-        /// <returns type="Object"/>
-        return new ();
+        /// <returns type="string"/>
+        return "";
     },
     setColor: function (value) {
         /// <summary>Allows you to set a color for the selected item.</summary>
@@ -3029,12 +3075,12 @@ ConditionalAttributes.prototype = {
     },
     getTag: function () {
         /// <summary>Gets and object for the specific item.</summary>
-        /// <returns type="?"/>
-        return new ?();
+        /// <returns type="object"/>
+        return new object();
     },
     setTag: function (value) {
         /// <summary>Sets and object for the specific item.</summary>
-        /// <param name="value" type="?"/>>
+        /// <param name="value" type="object"/>>
     },
     getText: function () {
         /// <summary>Gets a value for labeling the point or series attribute.</summary>
@@ -3080,8 +3126,8 @@ SeriesAttributes.prototype = {
     },
     getColor: function () {
         /// <summary>Gets a Color for the selected series.</summary>
-        /// <returns type="Object"/>
-        return new ();
+        /// <returns type="string"/>
+        return "";
     },
     setColor: function (value) {
         /// <summary>Sets a Color for the selected series.</summary>
@@ -3098,12 +3144,12 @@ SeriesAttributes.prototype = {
     },
     getGalleryAttributes: function () {
         /// <summary>Used to create a gallery object to assign additional attributes to the selected gallery type of the chart.</summary>
-        /// <returns type="?"/>
-        return new ?();
+        /// <returns type="object"/>
+        return new object();
     },
     setGalleryAttributes: function (value) {
         /// <summary>Used to create a gallery object to assign additional attributes to the selected gallery type of the chart.</summary>
-        /// <param name="value" type="?"/>>
+        /// <param name="value" type="object"/>>
     },
     getMarkerFont: function () {
         /// <summary>Gets a wingding font for use as marker shapes.</summary>
@@ -3165,8 +3211,8 @@ SeriesAttributes.prototype = {
     },
     getAlternateColor: function () {
         /// <summary>Gets the alternate color for a selected item when using gradient FillMode.</summary>
-        /// <returns type="Object"/>
-        return new ();
+        /// <returns type="string"/>
+        return "";
     },
     setAlternateColor: function (value) {
         /// <summary>Sets the alternate color for a selected item when using gradient FillMode.</summary>
@@ -3185,15 +3231,6 @@ SeriesAttributes.prototype = {
         /// <summary>Provides access to the border attributes object.</summary>
         /// <returns type="cfx.cj"/>
         return new cj();
-    },
-    getColor: function () {
-        /// <summary>Allows you to set a color for the selected item.</summary>
-        /// <returns type="Object"/>
-        return new ();
-    },
-    setColor: function (value) {
-        /// <summary>Allows you to set a color for the selected item.</summary>
-        /// <param name="value" type="String"/>>
     },
     getFillMode: function () {
         /// <summary>Gets a value indicating how jChartFX should fill the area representing the point.</summary>
@@ -3295,12 +3332,12 @@ SeriesAttributes.prototype = {
     },
     getTag: function () {
         /// <summary>Gets and object for the specific item.</summary>
-        /// <returns type="?"/>
-        return new ?();
+        /// <returns type="object"/>
+        return new object();
     },
     setTag: function (value) {
         /// <summary>Sets and object for the specific item.</summary>
-        /// <param name="value" type="?"/>>
+        /// <param name="value" type="object"/>>
     },
     getText: function () {
         /// <summary>Gets a value for labeling the point or series attribute.</summary>
@@ -3384,30 +3421,21 @@ cn.prototype = {
     },
     getColor: function () {
         /// <summary>Gets a Color for the selected series.</summary>
-        /// <returns type="Object"/>
-        return new ();
+        /// <returns type="string"/>
+        return "";
     },
     setColor: function (value) {
         /// <summary>Sets a Color for the selected series.</summary>
         /// <param name="value" type="String"/>>
     },
-    getGallery: function () {
-        /// <summary>Gets a gallery type for a particular series. All chart types are available in both 2D and 3D modes.</summary>
-        /// <returns type="cfx.Gallery"/>
-        return new Gallery();
-    },
-    setGallery: function (value) {
-        /// <summary>Sets a gallery type for a particular series. All chart types are available in both 2D and 3D modes.</summary>
-        /// <param name="value" type="cfx.Gallery"/>>
-    },
     getGalleryAttributes: function () {
         /// <summary>Used to create a gallery object to assign additional attributes to the selected gallery type of the chart.</summary>
-        /// <returns type="?"/>
-        return new ?();
+        /// <returns type="object"/>
+        return new object();
     },
     setGalleryAttributes: function (value) {
         /// <summary>Used to create a gallery object to assign additional attributes to the selected gallery type of the chart.</summary>
-        /// <param name="value" type="?"/>>
+        /// <param name="value" type="object"/>>
     },
     getMarkerFont: function () {
         /// <summary>Gets a wingding font for use as marker shapes.</summary>
@@ -3469,8 +3497,8 @@ cn.prototype = {
     },
     getAlternateColor: function () {
         /// <summary>Gets the alternate color for a selected item when using gradient FillMode.</summary>
-        /// <returns type="Object"/>
-        return new ();
+        /// <returns type="string"/>
+        return "";
     },
     setAlternateColor: function (value) {
         /// <summary>Sets the alternate color for a selected item when using gradient FillMode.</summary>
@@ -3489,15 +3517,6 @@ cn.prototype = {
         /// <summary>Provides access to the border attributes object.</summary>
         /// <returns type="cfx.cj"/>
         return new cj();
-    },
-    getColor: function () {
-        /// <summary>Allows you to set a color for the selected item.</summary>
-        /// <returns type="Object"/>
-        return new ();
-    },
-    setColor: function (value) {
-        /// <summary>Allows you to set a color for the selected item.</summary>
-        /// <param name="value" type="String"/>>
     },
     getFillMode: function () {
         /// <summary>Gets a value indicating how jChartFX should fill the area representing the point.</summary>
@@ -3599,12 +3618,12 @@ cn.prototype = {
     },
     getTag: function () {
         /// <summary>Gets and object for the specific item.</summary>
-        /// <returns type="?"/>
-        return new ?();
+        /// <returns type="object"/>
+        return new object();
     },
     setTag: function (value) {
         /// <summary>Sets and object for the specific item.</summary>
-        /// <param name="value" type="?"/>>
+        /// <param name="value" type="object"/>>
     },
     getText: function () {
         /// <summary>Gets a value for labeling the point or series attribute.</summary>
@@ -3761,7 +3780,7 @@ ToolTipMode.prototype = {
         /// <param name="value" type="StringAlignment"/>>
     },
     assignObject: function (obj) {
-        /// <param name="obj" type="?"/>>
+        /// <param name="obj" type="object"/>>
     }
 };
 
@@ -3844,7 +3863,7 @@ ToolTipLineAttributes.prototype = {
         /// <param name="value" type="StringAlignment"/>>
     },
     assignObject: function (obj) {
-        /// <param name="obj" type="?"/>>
+        /// <param name="obj" type="object"/>>
     }
 };
 
@@ -3860,8 +3879,8 @@ ToolTipAttributes.prototype = {
         /// <param name="value" type="bool"/>>
     },
     getBackColor: function () {
-        /// <returns type="Object"/>
-        return new ();
+        /// <returns type="string"/>
+        return "";
     },
     setBackColor: function (value) {
         /// <param name="value" type="String"/>>
@@ -3899,8 +3918,8 @@ ToolTipAttributes.prototype = {
         /// <param name="value" type="cfx.ToolTipMode"/>>
     },
     getTextColor: function () {
-        /// <returns type="Object"/>
-        return new ();
+        /// <returns type="string"/>
+        return "";
     },
     setTextColor: function (value) {
         /// <param name="value" type="String"/>>
@@ -3969,7 +3988,7 @@ ToolTipAttributes.prototype = {
         /// <param name="value" type="StringAlignment"/>>
     },
     assignObject: function (obj) {
-        /// <param name="obj" type="?"/>>
+        /// <param name="obj" type="object"/>>
     }
 };
 
@@ -4157,12 +4176,12 @@ cfx.DataSourceSettings = DataSourceSettings;
 DataSourceSettings.prototype = {
     getDataSource: function () {
         /// <summary>Gets the source containing the values used to populate the chart.</summary>
-        /// <returns type="?"/>
-        return new ?();
+        /// <returns type="object"/>
+        return new object();
     },
     setDataSource: function (value) {
         /// <summary>Sets the source containing the values used to populate the chart.</summary>
-        /// <param name="value" type="?"/>>
+        /// <param name="value" type="object"/>>
     },
     getFields: function () {
         /// <returns type="cfx.cD"/>
@@ -4231,8 +4250,8 @@ Pane.prototype = {
     },
     getBackColor: function () {
         /// <summary>Gets the inside color for the selected pane.</summary>
-        /// <returns type="Object"/>
-        return new ();
+        /// <returns type="string"/>
+        return "";
     },
     setBackColor: function (value) {
         /// <summary>Sets the inside color for the selected pane.</summary>
@@ -4419,8 +4438,6 @@ cS.prototype = {
     resetOrder: function () {
     },
     clear: function () {
-    },
-    clear: function () {
     }
 };
 
@@ -4452,8 +4469,6 @@ cV.prototype = {
     },
     remove: function (item) {
         /// <param name="item" type="cfx.CustomLegendItem"/>>
-    },
-    clear: function () {
     },
     clear: function () {
     }
@@ -4498,10 +4513,6 @@ cW.prototype = {
     resumeUpdate: function () {
     },
     suspendUpdate: function () {
-    },
-    clear: function () {
-    },
-    clear: function () {
     }
 };
 
@@ -4524,8 +4535,6 @@ cX.prototype = {
     insert: function (index, item) {
         /// <param name="index" type="number"/>>
         /// <param name="item" type="string"/>>
-    },
-    clear: function () {
     },
     clear: function () {
     }
@@ -4555,8 +4564,6 @@ cY.prototype = {
         /// <param name="item" type="cfx.CustomGridLine"/>>
     },
     clear: function () {
-    },
-    clear: function () {
     }
 };
 
@@ -4582,8 +4589,6 @@ cZ.prototype = {
     },
     remove: function (item) {
         /// <param name="item" type="cfx.AxisSection"/>>
-    },
-    clear: function () {
     },
     clear: function () {
     }
@@ -4665,8 +4670,8 @@ Title.prototype = {
         /// <param name="value" type="StringAlignment"/>>
     },
     getBackColor: function () {
-        /// <returns type="Object"/>
-        return new ();
+        /// <returns type="string"/>
+        return "";
     },
     setBackColor: function (value) {
         /// <param name="value" type="String"/>>
@@ -4710,6 +4715,13 @@ Title.prototype = {
     setSeparation: function (value) {
         /// <param name="value" type="number"/>>
     },
+    getTag: function () {
+        /// <returns type="string"/>
+        return "";
+    },
+    setTag: function (value) {
+        /// <param name="value" type="string"/>>
+    },
     getText: function () {
         /// <summary>Gets the text for the selected title.</summary>
         /// <returns type="string"/>
@@ -4721,8 +4733,8 @@ Title.prototype = {
     },
     getTextColor: function () {
         /// <summary>Gets the color of text for the specified title.</summary>
-        /// <returns type="Object"/>
-        return new ();
+        /// <returns type="string"/>
+        return "";
     },
     setTextColor: function (value) {
         /// <summary>Sets the color of text for the specified title.</summary>
@@ -4762,8 +4774,8 @@ TitleDockable.prototype = {
         /// <param name="value" type="StringAlignment"/>>
     },
     getBackColor: function () {
-        /// <returns type="Object"/>
-        return new ();
+        /// <returns type="string"/>
+        return "";
     },
     setBackColor: function (value) {
         /// <param name="value" type="String"/>>
@@ -4807,6 +4819,13 @@ TitleDockable.prototype = {
     setSeparation: function (value) {
         /// <param name="value" type="number"/>>
     },
+    getTag: function () {
+        /// <returns type="string"/>
+        return "";
+    },
+    setTag: function (value) {
+        /// <param name="value" type="string"/>>
+    },
     getText: function () {
         /// <summary>Gets the text for the selected title.</summary>
         /// <returns type="string"/>
@@ -4818,8 +4837,8 @@ TitleDockable.prototype = {
     },
     getTextColor: function () {
         /// <summary>Gets the color of text for the specified title.</summary>
-        /// <returns type="Object"/>
-        return new ();
+        /// <returns type="string"/>
+        return "";
     },
     setTextColor: function (value) {
         /// <summary>Sets the color of text for the specified title.</summary>
@@ -4849,8 +4868,8 @@ Grids.prototype = {
     },
     getInterlacedColor: function () {
         /// <summary>Gets the AlternateColor for a selected Grids object.</summary>
-        /// <returns type="Object"/>
-        return new ();
+        /// <returns type="string"/>
+        return "";
     },
     setInterlacedColor: function (value) {
         /// <summary>Sets the AlternateColor for a selected Grids object.</summary>
@@ -4878,8 +4897,8 @@ AxisSection.prototype = {
     },
     getBackColor: function () {
         /// <summary>Gets the AxisSection background color.</summary>
-        /// <returns type="Object"/>
-        return new ();
+        /// <returns type="string"/>
+        return "";
     },
     setBackColor: function (value) {
         /// <summary>Sets the AxisSection background color.</summary>
@@ -4937,8 +4956,8 @@ AxisSection.prototype = {
     },
     getTextColor: function () {
         /// <summary>Gets the color for text of a selected BaseAxisSection object.</summary>
-        /// <returns type="Object"/>
-        return new ();
+        /// <returns type="string"/>
+        return "";
     },
     setTextColor: function (value) {
         /// <summary>Sets the color for text of a selected BaseAxisSection object.</summary>
@@ -4984,7 +5003,7 @@ c9.prototype = {
     getCustomSteps: function () {
         /// <summary>Allows you to set a custom step for the selected axis.</summary>
         /// <returns type="Double[]"/>
-        return new Double[]();
+        return new Array();
     },
     setCustomSteps: function (value) {
         /// <summary>Allows you to set a custom step for the selected axis.</summary>
@@ -5304,8 +5323,8 @@ c9.prototype = {
     },
     getTextColor: function () {
         /// <summary>Gets the color for text of a selected BaseAxisSection object.</summary>
-        /// <returns type="Object"/>
-        return new ();
+        /// <returns type="string"/>
+        return "";
     },
     setTextColor: function (value) {
         /// <summary>Sets the color for text of a selected BaseAxisSection object.</summary>
@@ -5356,7 +5375,7 @@ AxisY.prototype = {
     getCustomSteps: function () {
         /// <summary>Allows you to set a custom step for the selected axis.</summary>
         /// <returns type="Double[]"/>
-        return new Double[]();
+        return new Array();
     },
     setCustomSteps: function (value) {
         /// <summary>Allows you to set a custom step for the selected axis.</summary>
@@ -5676,8 +5695,8 @@ AxisY.prototype = {
     },
     getTextColor: function () {
         /// <summary>Gets the color for text of a selected BaseAxisSection object.</summary>
-        /// <returns type="Object"/>
-        return new ();
+        /// <returns type="string"/>
+        return "";
     },
     setTextColor: function (value) {
         /// <summary>Sets the color for text of a selected BaseAxisSection object.</summary>
@@ -5723,7 +5742,7 @@ AxisX.prototype = {
     getCustomSteps: function () {
         /// <summary>Allows you to set a custom step for the selected axis.</summary>
         /// <returns type="Double[]"/>
-        return new Double[]();
+        return new Array();
     },
     setCustomSteps: function (value) {
         /// <summary>Allows you to set a custom step for the selected axis.</summary>
@@ -6043,8 +6062,8 @@ AxisX.prototype = {
     },
     getTextColor: function () {
         /// <summary>Gets the color for text of a selected BaseAxisSection object.</summary>
-        /// <returns type="Object"/>
-        return new ();
+        /// <returns type="string"/>
+        return "";
     },
     setTextColor: function (value) {
         /// <summary>Sets the color for text of a selected BaseAxisSection object.</summary>
@@ -6057,8 +6076,8 @@ var Line = function() {
 cfx.Line = Line;
 Line.prototype = {
     getColor: function () {
-        /// <returns type="Object"/>
-        return new ();
+        /// <returns type="string"/>
+        return "";
     },
     setColor: function (value) {
         /// <param name="value" type="String"/>>
@@ -6125,8 +6144,8 @@ GridLine.prototype = {
         /// <param name="value" type="bool"/>>
     },
     getColor: function () {
-        /// <returns type="Object"/>
-        return new ();
+        /// <returns type="string"/>
+        return "";
     },
     setColor: function (value) {
         /// <param name="value" type="String"/>>
@@ -6261,8 +6280,8 @@ CustomGridLine.prototype = {
     },
     getTextColor: function () {
         /// <summary>Gets the Text Colot for a label in a CustomGridLine.</summary>
-        /// <returns type="Object"/>
-        return new ();
+        /// <returns type="string"/>
+        return "";
     },
     setTextColor: function (value) {
         /// <summary>Sets the Text Colot for a label in a CustomGridLine.</summary>
@@ -6287,8 +6306,8 @@ CustomGridLine.prototype = {
         /// <param name="value" type="number"/>>
     },
     getColor: function () {
-        /// <returns type="Object"/>
-        return new ();
+        /// <returns type="string"/>
+        return "";
     },
     setColor: function (value) {
         /// <param name="value" type="String"/>>
@@ -6426,6 +6445,12 @@ c_.prototype = {
         /// <param name="seriesIndex" type="number"/>>
     },
     undoCompact: function () {
+    },
+    setSeries: function (series) {
+        /// <param name="series" type="number"/>>
+    },
+    setPoints: function (points) {
+        /// <param name="points" type="number"/>>
     }
 };
 
@@ -6439,8 +6464,7 @@ Chart.prototype = {
         return new cn();
     },
     getAnimations: function () {
-        /// <summary>The 'human touch' in the visuals encourages users to have a more personal connection with the data.
-jChartFX provides an attractive feature that allows you to render any chart using an animated style.</summary>
+        /// <summary>The 'human touch' in the visuals encourages users to have a more personal connection with the data.jChartFX provides an attractive feature that allows you to render any chart using an animated style.</summary>
         /// <returns type="cfx.cp"/>
         return new cp();
     },
@@ -6517,12 +6541,12 @@ jChartFX provides an attractive feature that allows you to render any chart usin
     },
     getDataSource: function () {
         /// <summary>Gets the source containing the values used to populate the chart.</summary>
-        /// <returns type="?"/>
-        return new ?();
+        /// <returns type="object"/>
+        return new object();
     },
     setDataSource: function (value) {
         /// <summary>Sets the source containing the values used to populate the chart.</summary>
-        /// <param name="value" type="?"/>>
+        /// <param name="value" type="object"/>>
     },
     getDataSourceSettings: function () {
         /// <summary>Used to assign data related attributes to your chart applications.</summary>
@@ -6558,12 +6582,12 @@ jChartFX provides an attractive feature that allows you to render any chart usin
     },
     getGalleryAttributes: function () {
         /// <summary>Used to create a gallery object to assign additional attributes to the selected gallery type of the chart. The gallery attribute can also be accessed through the AllSeries property.</summary>
-        /// <returns type="?"/>
-        return new ?();
+        /// <returns type="object"/>
+        return new object();
     },
     setGalleryAttributes: function (value) {
         /// <summary>Used to create a gallery object to assign additional attributes to the selected gallery type of the chart. The gallery attribute can also be accessed through the AllSeries property.</summary>
-        /// <param name="value" type="?"/>>
+        /// <param name="value" type="object"/>>
     },
     getLegendBox: function () {
         /// <summary>Allows you to access the legend box of the chart.</summary>
@@ -6594,8 +6618,8 @@ jChartFX provides an attractive feature that allows you to render any chart usin
         /// <param name="value" type="cfx.object"/>>
     },
     getPlotAreaColor: function () {
-        /// <returns type="Object"/>
-        return new ();
+        /// <returns type="string"/>
+        return "";
     },
     setPlotAreaColor: function (value) {
         /// <param name="value" type="String"/>>
@@ -6677,6 +6701,9 @@ jChartFX provides an attractive feature that allows you to render any chart usin
         /// <param name="message" type="string"/>>
     },
     updateSizeNow: function () {
+    },
+    create: function (div) {
+        /// <param name="div" type="object"/>>
     }
 };
 
@@ -6734,14 +6761,6 @@ var AnnImageMode = {
 AnnImageMode._isCFXEnum = true;
 cfx.annotation.AnnImageMode = AnnImageMode;
 
-var AttachMode = {
-    None: 0,
-    Point: 1,
-    Elastic: 2
-};
-AttachMode._isCFXEnum = true;
-cfx.annotation.AttachMode = AttachMode;
-
 var BalloonTailCorner = {
     TopLeft: 0,
     TopRight: 1,
@@ -6760,11 +6779,11 @@ var AnnotationTooltip = function() {
 cfx.annotation.AnnotationTooltip = AnnotationTooltip;
 AnnotationTooltip.prototype = {
     getData: function () {
-        /// <returns type="?"/>
-        return new ?();
+        /// <returns type="object"/>
+        return new object();
     },
     setData: function (value) {
-        /// <param name="value" type="?"/>>
+        /// <param name="value" type="object"/>>
     },
     getTemplate: function () {
         /// <returns type="string"/>
@@ -6813,8 +6832,8 @@ AnnotationVector.prototype = {
     },
     getColor: function () {
         /// <summary>Gets the inside fill color for annotation object.</summary>
-        /// <returns type="Object"/>
-        return new ();
+        /// <returns type="string"/>
+        return "";
     },
     setColor: function (value) {
         /// <summary>Sets the inside fill color for annotation object.</summary>
@@ -6876,12 +6895,12 @@ AnnotationVector.prototype = {
     },
     getTag: function () {
         /// <summary>Allows you to get or set a unique identifier to the objects you have created in the chart area.</summary>
-        /// <returns type="?"/>
-        return new ?();
+        /// <returns type="object"/>
+        return new object();
     },
     setTag: function (value) {
         /// <summary>Allows you to get or set a unique identifier to the objects you have created in the chart area.</summary>
-        /// <param name="value" type="?"/>>
+        /// <param name="value" type="object"/>>
     },
     getToolTip: function () {
         /// <returns type="cfx.annotation.AnnotationTooltip"/>
@@ -7009,8 +7028,8 @@ AnnotationText.prototype = {
     },
     getTextColor: function () {
         /// <summary>Sets the color of the text for an annotation object.</summary>
-        /// <returns type="Object"/>
-        return new ();
+        /// <returns type="string"/>
+        return "";
     },
     setTextColor: function (value) {
         /// <summary>Sets the color of the text for an annotation object.</summary>
@@ -7047,8 +7066,8 @@ AnnotationText.prototype = {
     },
     getColor: function () {
         /// <summary>Gets the inside fill color for annotation object.</summary>
-        /// <returns type="Object"/>
-        return new ();
+        /// <returns type="string"/>
+        return "";
     },
     setColor: function (value) {
         /// <summary>Sets the inside fill color for annotation object.</summary>
@@ -7110,12 +7129,12 @@ AnnotationText.prototype = {
     },
     getTag: function () {
         /// <summary>Allows you to get or set a unique identifier to the objects you have created in the chart area.</summary>
-        /// <returns type="?"/>
-        return new ?();
+        /// <returns type="object"/>
+        return new object();
     },
     setTag: function (value) {
         /// <summary>Allows you to get or set a unique identifier to the objects you have created in the chart area.</summary>
-        /// <param name="value" type="?"/>>
+        /// <param name="value" type="object"/>>
     },
     getToolTip: function () {
         /// <returns type="cfx.annotation.AnnotationTooltip"/>
@@ -7261,8 +7280,8 @@ AnnotationBalloon.prototype = {
     },
     getTextColor: function () {
         /// <summary>Sets the color of the text for an annotation object.</summary>
-        /// <returns type="Object"/>
-        return new ();
+        /// <returns type="string"/>
+        return "";
     },
     setTextColor: function (value) {
         /// <summary>Sets the color of the text for an annotation object.</summary>
@@ -7299,8 +7318,8 @@ AnnotationBalloon.prototype = {
     },
     getColor: function () {
         /// <summary>Gets the inside fill color for annotation object.</summary>
-        /// <returns type="Object"/>
-        return new ();
+        /// <returns type="string"/>
+        return "";
     },
     setColor: function (value) {
         /// <summary>Sets the inside fill color for annotation object.</summary>
@@ -7362,12 +7381,12 @@ AnnotationBalloon.prototype = {
     },
     getTag: function () {
         /// <summary>Allows you to get or set a unique identifier to the objects you have created in the chart area.</summary>
-        /// <returns type="?"/>
-        return new ?();
+        /// <returns type="object"/>
+        return new object();
     },
     setTag: function (value) {
         /// <summary>Allows you to get or set a unique identifier to the objects you have created in the chart area.</summary>
-        /// <param name="value" type="?"/>>
+        /// <param name="value" type="object"/>>
     },
     getToolTip: function () {
         /// <returns type="cfx.annotation.AnnotationTooltip"/>
@@ -7452,8 +7471,8 @@ AnnotationRectangle.prototype = {
     },
     getColor: function () {
         /// <summary>Gets the inside fill color for annotation object.</summary>
-        /// <returns type="Object"/>
-        return new ();
+        /// <returns type="string"/>
+        return "";
     },
     setColor: function (value) {
         /// <summary>Sets the inside fill color for annotation object.</summary>
@@ -7515,12 +7534,12 @@ AnnotationRectangle.prototype = {
     },
     getTag: function () {
         /// <summary>Allows you to get or set a unique identifier to the objects you have created in the chart area.</summary>
-        /// <returns type="?"/>
-        return new ?();
+        /// <returns type="object"/>
+        return new object();
     },
     setTag: function (value) {
         /// <summary>Allows you to get or set a unique identifier to the objects you have created in the chart area.</summary>
-        /// <param name="value" type="?"/>>
+        /// <param name="value" type="object"/>>
     },
     getToolTip: function () {
         /// <returns type="cfx.annotation.AnnotationTooltip"/>
@@ -7625,8 +7644,8 @@ AnnotationPicture.prototype = {
     },
     getColor: function () {
         /// <summary>Gets the inside fill color for annotation object.</summary>
-        /// <returns type="Object"/>
-        return new ();
+        /// <returns type="string"/>
+        return "";
     },
     setColor: function (value) {
         /// <summary>Sets the inside fill color for annotation object.</summary>
@@ -7688,12 +7707,12 @@ AnnotationPicture.prototype = {
     },
     getTag: function () {
         /// <summary>Allows you to get or set a unique identifier to the objects you have created in the chart area.</summary>
-        /// <returns type="?"/>
-        return new ?();
+        /// <returns type="object"/>
+        return new object();
     },
     setTag: function (value) {
         /// <summary>Allows you to get or set a unique identifier to the objects you have created in the chart area.</summary>
-        /// <param name="value" type="?"/>>
+        /// <param name="value" type="object"/>>
     },
     getToolTip: function () {
         /// <returns type="cfx.annotation.AnnotationTooltip"/>
@@ -7760,12 +7779,12 @@ cfx.annotation.AnnotationContainer = AnnotationContainer;
 AnnotationContainer.prototype = {
     getElement: function () {
         /// <summary>Gets the element that will contain the Chart or Gauge object added as an annotation.</summary>
-        /// <returns type="?"/>
-        return new ?();
+        /// <returns type="object"/>
+        return new object();
     },
     setElement: function (value) {
         /// <summary>Sets the element that will contain the Chart or Gauge object added as an annotation.</summary>
-        /// <param name="value" type="?"/>>
+        /// <param name="value" type="object"/>>
     },
     getAnchor: function () {
         /// <summary>Gets the Anchor style for the AnnotationObject.</summary>
@@ -7787,8 +7806,8 @@ AnnotationContainer.prototype = {
     },
     getColor: function () {
         /// <summary>Gets the inside fill color for annotation object.</summary>
-        /// <returns type="Object"/>
-        return new ();
+        /// <returns type="string"/>
+        return "";
     },
     setColor: function (value) {
         /// <summary>Sets the inside fill color for annotation object.</summary>
@@ -7850,12 +7869,12 @@ AnnotationContainer.prototype = {
     },
     getTag: function () {
         /// <summary>Allows you to get or set a unique identifier to the objects you have created in the chart area.</summary>
-        /// <returns type="?"/>
-        return new ?();
+        /// <returns type="object"/>
+        return new object();
     },
     setTag: function (value) {
         /// <summary>Allows you to get or set a unique identifier to the objects you have created in the chart area.</summary>
-        /// <param name="value" type="?"/>>
+        /// <param name="value" type="object"/>>
     },
     getToolTip: function () {
         /// <returns type="cfx.annotation.AnnotationTooltip"/>
@@ -7940,8 +7959,8 @@ AnnotationCircle.prototype = {
     },
     getColor: function () {
         /// <summary>Gets the inside fill color for annotation object.</summary>
-        /// <returns type="Object"/>
-        return new ();
+        /// <returns type="string"/>
+        return "";
     },
     setColor: function (value) {
         /// <summary>Sets the inside fill color for annotation object.</summary>
@@ -8003,12 +8022,12 @@ AnnotationCircle.prototype = {
     },
     getTag: function () {
         /// <summary>Allows you to get or set a unique identifier to the objects you have created in the chart area.</summary>
-        /// <returns type="?"/>
-        return new ?();
+        /// <returns type="object"/>
+        return new object();
     },
     setTag: function (value) {
         /// <summary>Allows you to get or set a unique identifier to the objects you have created in the chart area.</summary>
-        /// <param name="value" type="?"/>>
+        /// <param name="value" type="object"/>>
     },
     getToolTip: function () {
         /// <returns type="cfx.annotation.AnnotationTooltip"/>
@@ -8111,8 +8130,8 @@ AnnotationArrow.prototype = {
     },
     getColor: function () {
         /// <summary>Gets the inside fill color for annotation object.</summary>
-        /// <returns type="Object"/>
-        return new ();
+        /// <returns type="string"/>
+        return "";
     },
     setColor: function (value) {
         /// <summary>Sets the inside fill color for annotation object.</summary>
@@ -8174,12 +8193,12 @@ AnnotationArrow.prototype = {
     },
     getTag: function () {
         /// <summary>Allows you to get or set a unique identifier to the objects you have created in the chart area.</summary>
-        /// <returns type="?"/>
-        return new ?();
+        /// <returns type="object"/>
+        return new object();
     },
     setTag: function (value) {
         /// <summary>Allows you to get or set a unique identifier to the objects you have created in the chart area.</summary>
-        /// <param name="value" type="?"/>>
+        /// <param name="value" type="object"/>>
     },
     getToolTip: function () {
         /// <returns type="cfx.annotation.AnnotationTooltip"/>
@@ -8264,8 +8283,8 @@ AnnotationArc.prototype = {
     },
     getColor: function () {
         /// <summary>Gets the inside fill color for annotation object.</summary>
-        /// <returns type="Object"/>
-        return new ();
+        /// <returns type="string"/>
+        return "";
     },
     setColor: function (value) {
         /// <summary>Sets the inside fill color for annotation object.</summary>
@@ -8327,12 +8346,12 @@ AnnotationArc.prototype = {
     },
     getTag: function () {
         /// <summary>Allows you to get or set a unique identifier to the objects you have created in the chart area.</summary>
-        /// <returns type="?"/>
-        return new ?();
+        /// <returns type="object"/>
+        return new object();
     },
     setTag: function (value) {
         /// <summary>Allows you to get or set a unique identifier to the objects you have created in the chart area.</summary>
-        /// <param name="value" type="?"/>>
+        /// <param name="value" type="object"/>>
     },
     getToolTip: function () {
         /// <returns type="cfx.annotation.AnnotationTooltip"/>
@@ -8476,26 +8495,6 @@ Annotations.prototype = {
 cfx.density = { };
 cfx.density._isCFXNamespace = true;
 
-var DensityColor = function() {
-}
-cfx.density.DensityColor = DensityColor;
-DensityColor.prototype = {
-    getColor: function () {
-        /// <returns type="Object"/>
-        return new ();
-    },
-    setColor: function (value) {
-        /// <param name="value" type="String"/>>
-    },
-    getPosition: function () {
-        /// <returns type="number"/>
-        return 0;
-    },
-    setPosition: function (value) {
-        /// <param name="value" type="number"/>>
-    }
-};
-
 var Density = function() {
 }
 cfx.density.Density = Density;
@@ -8529,8 +8528,8 @@ cfx.equalizer.EqualizerItem = EqualizerItem;
 EqualizerItem.prototype = {
     getBorderColor: function () {
         /// <summary>Gets the border color of an EqualizerBar item.</summary>
-        /// <returns type="Object"/>
-        return new ();
+        /// <returns type="string"/>
+        return "";
     },
     setBorderColor: function (value) {
         /// <summary>Sets the border color of an EqualizerBar item.</summary>
@@ -8538,8 +8537,8 @@ EqualizerItem.prototype = {
     },
     getColor: function () {
         /// <summary>Gets the color of an EqualizerBar top item.</summary>
-        /// <returns type="Object"/>
-        return new ();
+        /// <returns type="string"/>
+        return "";
     },
     setColor: function (value) {
         /// <summary>Sets the color of an EqualizerBar top item.</summary>
@@ -8602,8 +8601,8 @@ EqualizerBar.prototype = {
     },
     getOffBorderColor: function () {
         /// <summary>Allows you to set a border color for the parts of the bar that do not have data.</summary>
-        /// <returns type="Object"/>
-        return new ();
+        /// <returns type="string"/>
+        return "";
     },
     setOffBorderColor: function (value) {
         /// <summary>Allows you to set a border color for the parts of the bar that do not have data.</summary>
@@ -8611,8 +8610,8 @@ EqualizerBar.prototype = {
     },
     getOffColor: function () {
         /// <summary>Allows you to set a color for the parts of the bar that do not have data.</summary>
-        /// <returns type="Object"/>
-        return new ();
+        /// <returns type="string"/>
+        return "";
     },
     setOffColor: function (value) {
         /// <summary>Allows you to set a color for the parts of the bar that do not have data.</summary>
@@ -8660,8 +8659,8 @@ cfx.heatmap.ColorGradientStop = ColorGradientStop;
 ColorGradientStop.prototype = {
     getColor: function () {
         /// <summary>This property is used to change the color of the ColorGradientStop added to the Heatmap Gallery.</summary>
-        /// <returns type="Object"/>
-        return new ();
+        /// <returns type="string"/>
+        return "";
     },
     setColor: function (value) {
         /// <summary>This property is used to change the color of the ColorGradientStop added to the Heatmap Gallery.</summary>
@@ -8797,18 +8796,25 @@ var CrosstabDataProvider = function() {
 }
 cfx.data.CrosstabDataProvider = CrosstabDataProvider;
 CrosstabDataProvider.prototype = {
+    getAggregate: function () {
+        /// <returns type="cfx.data.CrosstabAggregate"/>
+        return new CrosstabAggregate();
+    },
+    setAggregate: function (value) {
+        /// <param name="value" type="cfx.data.CrosstabAggregate"/>>
+    },
     getColumns: function () {
         /// <returns type="cfx.data.dU"/>
         return new dU();
     },
     getDataSource: function () {
         /// <summary>Description goes here</summary>
-        /// <returns type="?"/>
-        return new ?();
+        /// <returns type="object"/>
+        return new object();
     },
     setDataSource: function (value) {
         /// <summary>Description goes here</summary>
-        /// <param name="value" type="?"/>>
+        /// <param name="value" type="object"/>>
     },
     getRows: function () {
         /// <returns type="cfx.data.dU"/>
@@ -8866,7 +8872,13 @@ var HighLow = function() {
 }
 cfx.highlow.HighLow = HighLow;
 HighLow.prototype = {
-
+    getTemplate: function () {
+        /// <returns type="string"/>
+        return "";
+    },
+    setTemplate: function (value) {
+        /// <param name="value" type="string"/>>
+    }
 };
 
 cfx.bullet = { };
@@ -9210,8 +9222,8 @@ ed.prototype = {
     },
     getColor: function () {
         /// <summary>Description goes here</summary>
-        /// <returns type="Object"/>
-        return new ();
+        /// <returns type="string"/>
+        return "";
     },
     setColor: function (value) {
         /// <summary>Description goes here</summary>
@@ -9311,22 +9323,20 @@ MapLayer.prototype = {
     },
     getGalleryAttributes: function () {
         /// <summary>Description goes here</summary>
-        /// <returns type="?"/>
-        return new ?();
+        /// <returns type="object"/>
+        return new object();
     },
     setGalleryAttributes: function (value) {
         /// <summary>Description goes here</summary>
-        /// <param name="value" type="?"/>>
+        /// <param name="value" type="object"/>>
     },
     getHandleEvents: function () {
-        /// <summary>Used to allow or prevent from automatically handling triggered events
-In order for developers to custom handling events programmatically, you must set the HandleEvents property for the layer object to False.</summary>
+        /// <summary>Used to allow or prevent from automatically handling triggered eventsIn order for developers to custom handling events programmatically, you must set the HandleEvents property for the layer object to False.</summary>
         /// <returns type="bool"/>
         return true;
     },
     setHandleEvents: function (value) {
-        /// <summary>Used to allow or prevent from automatically handling triggered events
-In order for developers to custom handling events programmatically, you must set the HandleEvents property for the layer object to False.</summary>
+        /// <summary>Used to allow or prevent from automatically handling triggered eventsIn order for developers to custom handling events programmatically, you must set the HandleEvents property for the layer object to False.</summary>
         /// <param name="value" type="bool"/>>
     },
     getIndex: function () {
@@ -9394,6 +9404,20 @@ In order for developers to custom handling events programmatically, you must set
     setShowWithoutLabels: function (value) {
         /// <summary>Description goes here</summary>
         /// <param name="value" type="bool"/>>
+    },
+    getSpacing: function () {
+        /// <returns type="number"/>
+        return 0;
+    },
+    setSpacing: function (value) {
+        /// <param name="value" type="number"/>>
+    },
+    getTemplate: function () {
+        /// <returns type="string"/>
+        return "";
+    },
+    setTemplate: function (value) {
+        /// <param name="value" type="string"/>>
     },
     getTextShadow: function () {
         /// <summary>Gets a value indicating whether or not shadowing is applied for layer labels.</summary>
@@ -9503,8 +9527,8 @@ cfx.maps.ColorGradient = ColorGradient;
 ColorGradient.prototype = {
     getColor: function () {
         /// <summary>Gets the color for the ColorGradient object.</summary>
-        /// <returns type="Object"/>
-        return new ();
+        /// <returns type="string"/>
+        return "";
     },
     setColor: function (value) {
         /// <summary>Sets the color for the ColorGradient object.</summary>
@@ -9527,8 +9551,8 @@ cfx.maps.el = el;
 el.prototype = {
     getBackColor: function () {
         /// <summary>Description goes here</summary>
-        /// <returns type="Object"/>
-        return new ();
+        /// <returns type="string"/>
+        return "";
     },
     setBackColor: function (value) {
         /// <summary>Description goes here</summary>
@@ -9599,8 +9623,8 @@ cfx.maps.Map = Map;
 Map.prototype = {
     getBackColor: function () {
         /// <summary>Gets the background color of the Map</summary>
-        /// <returns type="Object"/>
-        return new ();
+        /// <returns type="string"/>
+        return "";
     },
     setBackColor: function (value) {
         /// <summary>Sets the background color of the Map</summary>
@@ -9616,8 +9640,8 @@ Map.prototype = {
         /// <param name="value" type="bool"/>>
     },
     getChart: function () {
-        /// <returns type="?"/>
-        return new ?();
+        /// <returns type="object"/>
+        return new object();
     },
     getLayers: function () {
         /// <returns type="cfx.maps.ep"/>
@@ -9736,8 +9760,8 @@ SparkLine.prototype = {
     },
     getGalleryAttributes: function () {
         /// <summary>Description goes here</summary>
-        /// <returns type="?"/>
-        return new ?();
+        /// <returns type="object"/>
+        return new object();
     },
     getGalleryVolume: function () {
         /// <summary>Description goes here</summary>
@@ -9776,22 +9800,22 @@ var AxisTrend = function() {
 cfx.axistrend.AxisTrend = AxisTrend;
 AxisTrend.prototype = {
     getColorEqualTo: function () {
-        /// <returns type="Object"/>
-        return new ();
+        /// <returns type="string"/>
+        return "";
     },
     setColorEqualTo: function (value) {
         /// <param name="value" type="String"/>>
     },
     getColorGreatherThan: function () {
-        /// <returns type="Object"/>
-        return new ();
+        /// <returns type="string"/>
+        return "";
     },
     setColorGreatherThan: function (value) {
         /// <param name="value" type="String"/>>
     },
     getColorLessThan: function () {
-        /// <returns type="Object"/>
-        return new ();
+        /// <returns type="string"/>
+        return "";
     },
     setColorLessThan: function (value) {
         /// <param name="value" type="String"/>>
@@ -9804,6 +9828,338 @@ AxisTrend.prototype = {
     setWidth: function (value) {
         /// <summary>Description goes here</summary>
         /// <param name="value" type="number"/>>
+    }
+};
+
+cfx.pictograph = { };
+cfx.pictograph._isCFXNamespace = true;
+
+var FractionDisplay = {
+    None: 0,
+    Horizontal: 1,
+    Vertical: 2
+};
+FractionDisplay._isCFXEnum = true;
+cfx.pictograph.FractionDisplay = FractionDisplay;
+
+var MatrixDirection = {
+    Horizontal: 0,
+    Vertical: 1
+};
+MatrixDirection._isCFXEnum = true;
+cfx.pictograph.MatrixDirection = MatrixDirection;
+
+var MeasurePosition = {
+    Start: 0,
+    End: 1
+};
+MeasurePosition._isCFXEnum = true;
+cfx.pictograph.MeasurePosition = MeasurePosition;
+
+var RoundMethod = {
+    None: 0,
+    Quarter: 1,
+    Halves: 2
+};
+RoundMethod._isCFXEnum = true;
+cfx.pictograph.RoundMethod = RoundMethod;
+
+var PictoBarRoundSettings = function() {
+}
+cfx.pictograph.PictoBarRoundSettings = PictoBarRoundSettings;
+PictoBarRoundSettings.prototype = {
+    getEnabled: function () {
+        /// <returns type="bool"/>
+        return true;
+    },
+    setEnabled: function (value) {
+        /// <param name="value" type="bool"/>>
+    },
+    getMethod: function () {
+        /// <returns type="cfx.pictograph.RoundMethod"/>
+        return new RoundMethod();
+    },
+    setMethod: function (value) {
+        /// <param name="value" type="cfx.pictograph.RoundMethod"/>>
+    }
+};
+
+var PictoBar = function() {
+}
+cfx.pictograph.PictoBar = PictoBar;
+PictoBar.prototype = {
+    getEmptyColor: function () {
+        /// <returns type="string"/>
+        return "";
+    },
+    setEmptyColor: function (value) {
+        /// <param name="value" type="String"/>>
+    },
+    getEmptyColorBorder: function () {
+        /// <returns type="string"/>
+        return "";
+    },
+    setEmptyColorBorder: function (value) {
+        /// <param name="value" type="String"/>>
+    },
+    getIntraSeriesGap: function () {
+        /// <returns type="number"/>
+        return 0;
+    },
+    setIntraSeriesGap: function (value) {
+        /// <param name="value" type="number"/>>
+    },
+    getRound: function () {
+        /// <returns type="cfx.pictograph.PictoBarRoundSettings"/>
+        return new PictoBarRoundSettings();
+    },
+    getShowEmpty: function () {
+        /// <returns type="bool"/>
+        return true;
+    },
+    setShowEmpty: function (value) {
+        /// <param name="value" type="bool"/>>
+    },
+    getSpacing: function () {
+        /// <returns type="number"/>
+        return 0;
+    },
+    setSpacing: function (value) {
+        /// <param name="value" type="number"/>>
+    },
+    getTemplate: function () {
+        /// <returns type="string"/>
+        return "";
+    },
+    setTemplate: function (value) {
+        /// <param name="value" type="string"/>>
+    }
+};
+
+var dR = function() {
+}
+cfx.pictograph.dR = dR;
+dR.prototype = {
+    getCount: function () {
+        /// <returns type="number"/>
+        return 0;
+    },
+    getItem: function (index) {
+        /// <param name="index" type="number"/>>
+        /// <returns type="cfx.pictograph.PictoMeasure"/>
+        return new PictoMeasure();
+    },
+    setItem: function (index, value) {
+        /// <param name="index" type="number"/>>
+        /// <param name="value" type="cfx.pictograph.PictoMeasure"/>>
+    },
+    add: function (measure) {
+        /// <param name="measure" type="cfx.pictograph.PictoMeasure"/>>
+    },
+    clear: function () {
+    },
+    removeAt: function (index) {
+        /// <param name="index" type="number"/>>
+    }
+};
+
+var PictoLayout = function() {
+}
+cfx.pictograph.PictoLayout = PictoLayout;
+PictoLayout.prototype = {
+    getHorizontalSpacing: function () {
+        /// <returns type="number"/>
+        return 0;
+    },
+    setHorizontalSpacing: function (value) {
+        /// <param name="value" type="number"/>>
+    },
+    getVerticalSpacing: function () {
+        /// <returns type="number"/>
+        return 0;
+    },
+    setVerticalSpacing: function (value) {
+        /// <param name="value" type="number"/>>
+    }
+};
+
+var PictoMatrixLayout = function() {
+}
+cfx.pictograph.PictoMatrixLayout = PictoMatrixLayout;
+PictoMatrixLayout.prototype = {
+    getColumns: function () {
+        /// <returns type="number"/>
+        return 0;
+    },
+    setColumns: function (value) {
+        /// <param name="value" type="number"/>>
+    },
+    getDirection: function () {
+        /// <returns type="cfx.pictograph.MatrixDirection"/>
+        return new MatrixDirection();
+    },
+    setDirection: function (value) {
+        /// <param name="value" type="cfx.pictograph.MatrixDirection"/>>
+    },
+    getRows: function () {
+        /// <returns type="number"/>
+        return 0;
+    },
+    setRows: function (value) {
+        /// <param name="value" type="number"/>>
+    },
+    getHorizontalSpacing: function () {
+        /// <returns type="number"/>
+        return 0;
+    },
+    setHorizontalSpacing: function (value) {
+        /// <param name="value" type="number"/>>
+    },
+    getVerticalSpacing: function () {
+        /// <returns type="number"/>
+        return 0;
+    },
+    setVerticalSpacing: function (value) {
+        /// <param name="value" type="number"/>>
+    }
+};
+
+var PictoHiveLayout = function() {
+}
+cfx.pictograph.PictoHiveLayout = PictoHiveLayout;
+PictoHiveLayout.prototype = {
+    getHorizontalSpacing: function () {
+        /// <returns type="number"/>
+        return 0;
+    },
+    setHorizontalSpacing: function (value) {
+        /// <param name="value" type="number"/>>
+    },
+    getVerticalSpacing: function () {
+        /// <returns type="number"/>
+        return 0;
+    },
+    setVerticalSpacing: function (value) {
+        /// <param name="value" type="number"/>>
+    }
+};
+
+var PictoMeasure = function() {
+}
+cfx.pictograph.PictoMeasure = PictoMeasure;
+PictoMeasure.prototype = {
+    getBorderColor: function () {
+        /// <returns type="string"/>
+        return "";
+    },
+    setBorderColor: function (value) {
+        /// <param name="value" type="String"/>>
+    },
+    getColor: function () {
+        /// <returns type="string"/>
+        return "";
+    },
+    setColor: function (value) {
+        /// <param name="value" type="String"/>>
+    },
+    getDecimals: function () {
+        /// <returns type="number"/>
+        return 0;
+    },
+    setDecimals: function (value) {
+        /// <param name="value" type="number"/>>
+    },
+    getScaleUnit: function () {
+        /// <returns type="number"/>
+        return 0;
+    },
+    setScaleUnit: function (value) {
+        /// <param name="value" type="number"/>>
+    },
+    getTitle: function () {
+        /// <returns type="string"/>
+        return "";
+    },
+    setTitle: function (value) {
+        /// <param name="value" type="string"/>>
+    },
+    getValue: function () {
+        /// <returns type="number"/>
+        return 0;
+    },
+    setValue: function (value) {
+        /// <param name="value" type="number"/>>
+    }
+};
+
+var PictoGraph = function() {
+}
+cfx.pictograph.PictoGraph = PictoGraph;
+PictoGraph.prototype = {
+    getCount: function () {
+        /// <returns type="number"/>
+        return 0;
+    },
+    setCount: function (value) {
+        /// <param name="value" type="number"/>>
+    },
+    getForceBorder: function () {
+        /// <returns type="bool"/>
+        return true;
+    },
+    setForceBorder: function (value) {
+        /// <param name="value" type="bool"/>>
+    },
+    getFractionDisplay: function () {
+        /// <returns type="cfx.pictograph.FractionDisplay"/>
+        return new FractionDisplay();
+    },
+    setFractionDisplay: function (value) {
+        /// <param name="value" type="cfx.pictograph.FractionDisplay"/>>
+    },
+    getLayout: function () {
+        /// <returns type="cfx.pictograph.PictoLayout"/>
+        return new PictoLayout();
+    },
+    setLayout: function (value) {
+        /// <param name="value" type="cfx.pictograph.PictoLayout"/>>
+    },
+    getMeasurePosition: function () {
+        /// <returns type="cfx.pictograph.MeasurePosition"/>
+        return new MeasurePosition();
+    },
+    setMeasurePosition: function (value) {
+        /// <param name="value" type="cfx.pictograph.MeasurePosition"/>>
+    },
+    getTemplate: function () {
+        /// <returns type="string"/>
+        return "";
+    },
+    setTemplate: function (value) {
+        /// <param name="value" type="string"/>>
+    }
+};
+
+cfx.eventtimeline = { };
+cfx.eventtimeline._isCFXNamespace = true;
+
+var EventTimeline = function() {
+}
+cfx.eventtimeline.EventTimeline = EventTimeline;
+EventTimeline.prototype = {
+    getColorField: function () {
+        /// <returns type="string"/>
+        return "";
+    },
+    setColorField: function (value) {
+        /// <param name="value" type="string"/>>
+    },
+    getShapeField: function () {
+        /// <returns type="string"/>
+        return "";
+    },
+    setShapeField: function (value) {
+        /// <param name="value" type="string"/>>
     }
 };
 
@@ -9832,7 +10188,8 @@ var ConditionalApplies = {
     None: 0,
     Indicator: 1,
     PrimaryValue: 2,
-    IndicatorPrimaryBack: 4
+    IndicatorPrimaryBack: 4,
+    SecondaryValues: 8
 };
 ConditionalApplies._isCFXEnum = true;
 cfx.gauge.ConditionalApplies = ConditionalApplies;
@@ -9937,7 +10294,19 @@ var PaletteColor = {
     TipAttrText: 32,
     TipAttrBack: 33,
     TipAttrBorder: 34,
-    OffBack: 35
+    OffBack: 35,
+    EmptyFill: 36,
+    EmptyBorder: 37,
+    Fill0: 38,
+    Fill1: 39,
+    Fill2: 40,
+    Fill3: 41,
+    Fill4: 42,
+    Border0: 43,
+    Border1: 44,
+    Border2: 45,
+    Border3: 46,
+    Border4: 47
 };
 PaletteColor._isCFXEnum = true;
 cfx.gauge.PaletteColor = PaletteColor;
@@ -10038,6 +10407,34 @@ var d4 = function() {
 }
 cfx.gauge.d4 = d4;
 d4.prototype = {
+    getMarkerPosition: function () {
+        /// <returns type="number"/>
+        return 0;
+    },
+    setMarkerPosition: function (value) {
+        /// <param name="value" type="number"/>>
+    },
+    getMarkerSize: function () {
+        /// <returns type="number"/>
+        return 0;
+    },
+    setMarkerSize: function (value) {
+        /// <param name="value" type="number"/>>
+    },
+    getRepeaterPosition: function () {
+        /// <returns type="number"/>
+        return 0;
+    },
+    setRepeaterPosition: function (value) {
+        /// <param name="value" type="number"/>>
+    },
+    getRepeaterSize: function () {
+        /// <returns type="number"/>
+        return 0;
+    },
+    setRepeaterSize: function (value) {
+        /// <param name="value" type="number"/>>
+    },
     getSectionPosition: function () {
         /// <summary>Defines the default position for any new section added to the gauge.</summary>
         /// <returns type="number"/>
@@ -10156,10 +10553,10 @@ d8.prototype = {
     }
 };
 
-var d$ = function() {
+var PictoLayout = function() {
 }
-cfx.gauge.d$ = d$;
-d$.prototype = {
+cfx.gauge.PictoLayout = PictoLayout;
+PictoLayout.prototype = {
     getHorizontalSpacing: function () {
         /// <returns type="number"/>
         return 0;
@@ -10242,15 +10639,15 @@ var PictoMeasure = function() {
 cfx.gauge.PictoMeasure = PictoMeasure;
 PictoMeasure.prototype = {
     getBorderColor: function () {
-        /// <returns type="Object"/>
-        return new ();
+        /// <returns type="string"/>
+        return "";
     },
     setBorderColor: function (value) {
         /// <param name="value" type="String"/>>
     },
     getColor: function () {
-        /// <returns type="Object"/>
-        return new ();
+        /// <returns type="string"/>
+        return "";
     },
     setColor: function (value) {
         /// <param name="value" type="String"/>>
@@ -10276,6 +10673,13 @@ PictoMeasure.prototype = {
     setScaleUnit: function (value) {
         /// <param name="value" type="number"/>>
     },
+    getTitle: function () {
+        /// <returns type="string"/>
+        return "";
+    },
+    setTitle: function (value) {
+        /// <param name="value" type="string"/>>
+    },
     getValue: function () {
         /// <returns type="number"/>
         return 0;
@@ -10300,8 +10704,8 @@ d_.prototype = {
     },
     getColorEqualToReference: function () {
         /// <summary>Gets the color used when the Current value is equal to the Reference value.</summary>
-        /// <returns type="Object"/>
-        return new ();
+        /// <returns type="string"/>
+        return "";
     },
     setColorEqualToReference: function (value) {
         /// <summary>Sets the color used when the Current value is equal to the Reference value.</summary>
@@ -10309,8 +10713,8 @@ d_.prototype = {
     },
     getColorGreaterThanReference: function () {
         /// <summary>Gets the color used when the Current value is greater than the Reference value.</summary>
-        /// <returns type="Object"/>
-        return new ();
+        /// <returns type="string"/>
+        return "";
     },
     setColorGreaterThanReference: function (value) {
         /// <summary>Sets the color used when the Current value is greater than the Reference value.</summary>
@@ -10318,8 +10722,8 @@ d_.prototype = {
     },
     getColorLessThanReference: function () {
         /// <summary>Gets the color used when the Current value is lesser than the Reference value.</summary>
-        /// <returns type="Object"/>
-        return new ();
+        /// <returns type="string"/>
+        return "";
     },
     setColorLessThanReference: function (value) {
         /// <summary>Sets the color used when the Current value is lesser than the Reference value.</summary>
@@ -10385,6 +10789,13 @@ ea.prototype = {
         /// <summary>Sets the style used by the indicator.</summary>
         /// <param name="value" type="cfx.gauge.IndicatorStyle"/>>
     },
+    getTemplate: function () {
+        /// <returns type="string"/>
+        return "";
+    },
+    setTemplate: function (value) {
+        /// <param name="value" type="string"/>>
+    },
     getVisible: function () {
         /// <summary>Gets the indicator visibility.</summary>
         /// <returns type="bool"/>
@@ -10444,8 +10855,8 @@ ec.prototype = {
     },
     getSeparatorColor: function () {
         /// <summary>Gets the color used for the separator between the main area and the secondary area.</summary>
-        /// <returns type="Object"/>
-        return new ();
+        /// <returns type="string"/>
+        return "";
     },
     setSeparatorColor: function (value) {
         /// <summary>Sets the color used for the separator between the main area and the secondary area.</summary>
@@ -10531,8 +10942,8 @@ ed.prototype = {
     },
     getShadowColor: function () {
         /// <summary>Gets the PrimarySettings shadow color.</summary>
-        /// <returns type="Object"/>
-        return new ();
+        /// <returns type="string"/>
+        return "";
     },
     setShadowColor: function (value) {
         /// <summary>Sets the PrimarySettings shadow color.</summary>
@@ -10744,15 +11155,6 @@ ef.prototype = {
     },
     setPriority: function (value) {
         /// <summary>Sets the priority given to a Trend value, used by the control to decide whether or not the value is displayed.</summary>
-        /// <param name="value" type="number"/>>
-    },
-    getScaleUnit: function () {
-        /// <summary>Gets the scale unit of a selected value.</summary>
-        /// <returns type="number"/>
-        return 0;
-    },
-    setScaleUnit: function (value) {
-        /// <summary>Sets the scale unit of a selected value.</summary>
         /// <param name="value" type="number"/>>
     },
     getSymbol: function () {
@@ -11036,26 +11438,26 @@ cfx.gauge.el = el;
 el.prototype = {
     getItem: function (n) {
         /// <param name="n" type="number"/>>
-        /// <returns type="?"/>
-        return new ?();
+        /// <returns type="object"/>
+        return new object();
     },
     add: function (obj) {
-        /// <param name="obj" type="?"/>>
+        /// <param name="obj" type="object"/>>
     },
     clear: function () {
     },
     find: function (type) {
         /// <param name="type" type="Type"/>>
-        /// <returns type="?"/>
-        return new ?();
+        /// <returns type="object"/>
+        return new object();
     },
     indexOf: function (extension) {
-        /// <param name="extension" type="?"/>>
+        /// <param name="extension" type="object"/>>
         /// <returns type="number"/>
         return 0;
     },
     remove: function (obj) {
-        /// <param name="obj" type="?"/>>
+        /// <param name="obj" type="object"/>>
     }
 };
 
@@ -11065,8 +11467,8 @@ cfx.gauge.em = em;
 em.prototype = {
     getColor: function () {
         /// <summary>Gets the color for a PointAttribute's Line.</summary>
-        /// <returns type="Object"/>
-        return new ();
+        /// <returns type="string"/>
+        return "";
     },
     setColor: function (value) {
         /// <summary>Sets the color for a PointAttribute's Line.</summary>
@@ -11125,8 +11527,8 @@ en.prototype = {
     },
     getBackColor: function () {
         /// <summary>Gets the background color of the tooltip object.</summary>
-        /// <returns type="Object"/>
-        return new ();
+        /// <returns type="string"/>
+        return "";
     },
     setBackColor: function (value) {
         /// <summary>Sets the background color of the tooltip object.</summary>
@@ -11200,8 +11602,8 @@ en.prototype = {
     },
     getTextColor: function () {
         /// <summary>Gets the color for text of the tooltip object.</summary>
-        /// <returns type="Object"/>
-        return new ();
+        /// <returns type="string"/>
+        return "";
     },
     setTextColor: function (value) {
         /// <summary>Sets the color for text of the tooltip object.</summary>
@@ -11240,8 +11642,14 @@ Palette.prototype = {
     },
     getColor: function (palColor) {
         /// <param name="palColor" type="cfx.gauge.PaletteColor"/>>
-        /// <returns type="Object"/>
-        return new ();
+        /// <returns type="string"/>
+        return "";
+    },
+    getDataColor: function (index, border) {
+        /// <param name="index" type="number"/>>
+        /// <param name="border" type="bool"/>>
+        /// <returns type="string"/>
+        return "";
     },
     setColor: function (palColor, value) {
         /// <param name="palColor" type="cfx.gauge.PaletteColor"/>>
@@ -11255,8 +11663,8 @@ cfx.gauge.eo = eo;
 eo.prototype = {
     getColor: function () {
         /// <summary>{vreb} the shadow color.</summary>
-        /// <returns type="Object"/>
-        return new ();
+        /// <returns type="string"/>
+        return "";
     },
     setColor: function (value) {
         /// <summary>{vreb} the shadow color.</summary>
@@ -11442,8 +11850,8 @@ Title.prototype = {
     },
     getTextColor: function () {
         /// <summary>Gets the text color for a title.</summary>
-        /// <returns type="Object"/>
-        return new ();
+        /// <returns type="string"/>
+        return "";
     },
     setTextColor: function (value) {
         /// <summary>Sets the text color for a title.</summary>
@@ -11496,8 +11904,8 @@ cfx.gauge.et = et;
 et.prototype = {
     getColor: function () {
         /// <summary>Gets the color of a Tickmark object.</summary>
-        /// <returns type="Object"/>
-        return new ();
+        /// <returns type="string"/>
+        return "";
     },
     setColor: function (value) {
         /// <summary>Sets the color of a Tickmark object.</summary>
@@ -11505,8 +11913,8 @@ et.prototype = {
     },
     getInsideColor: function () {
         /// <summary>Gets the internal color of tickmarks.</summary>
-        /// <returns type="Object"/>
-        return new ();
+        /// <returns type="string"/>
+        return "";
     },
     setInsideColor: function (value) {
         /// <summary>Sets the internal color of tickmarks.</summary>
@@ -11631,8 +12039,8 @@ cfx.gauge.ev = ev;
 ev.prototype = {
     getColor: function () {
         /// <summary>Gets the ScaleCap color.</summary>
-        /// <returns type="Object"/>
-        return new ();
+        /// <returns type="string"/>
+        return "";
     },
     setColor: function (value) {
         /// <summary>Sets the ScaleCap color.</summary>
@@ -11682,8 +12090,8 @@ cfx.gauge.ew = ew;
 ew.prototype = {
     getAlternateColor: function () {
         /// <summary>Gets the alternate color of a ScaleBar.</summary>
-        /// <returns type="Object"/>
-        return new ();
+        /// <returns type="string"/>
+        return "";
     },
     setAlternateColor: function (value) {
         /// <summary>Sets the alternate color of a ScaleBar.</summary>
@@ -11691,8 +12099,8 @@ ew.prototype = {
     },
     getBorderColor: function () {
         /// <summary>Gets the border color for the ScaleBar object.</summary>
-        /// <returns type="Object"/>
-        return new ();
+        /// <returns type="string"/>
+        return "";
     },
     setBorderColor: function (value) {
         /// <summary>Sets the border color for the ScaleBar object.</summary>
@@ -11700,8 +12108,8 @@ ew.prototype = {
     },
     getColor: function () {
         /// <summary>Gets the color of the ScaleBar object.</summary>
-        /// <returns type="Object"/>
-        return new ();
+        /// <returns type="string"/>
+        return "";
     },
     setColor: function (value) {
         /// <summary>Sets the color of the ScaleBar object.</summary>
@@ -11805,8 +12213,8 @@ ScaleSection.prototype = {
     },
     getAlternateColor: function () {
         /// <summary>Gets the alternate color of a ScaleBar.</summary>
-        /// <returns type="Object"/>
-        return new ();
+        /// <returns type="string"/>
+        return "";
     },
     setAlternateColor: function (value) {
         /// <summary>Sets the alternate color of a ScaleBar.</summary>
@@ -11814,8 +12222,8 @@ ScaleSection.prototype = {
     },
     getBorderColor: function () {
         /// <summary>Gets the border color for the ScaleBar object.</summary>
-        /// <returns type="Object"/>
-        return new ();
+        /// <returns type="string"/>
+        return "";
     },
     setBorderColor: function (value) {
         /// <summary>Sets the border color for the ScaleBar object.</summary>
@@ -11823,8 +12231,8 @@ ScaleSection.prototype = {
     },
     getColor: function () {
         /// <summary>Gets the color of the ScaleBar object.</summary>
-        /// <returns type="Object"/>
-        return new ();
+        /// <returns type="string"/>
+        return "";
     },
     setColor: function (value) {
         /// <summary>Sets the color of the ScaleBar object.</summary>
@@ -11963,6 +12371,13 @@ ex.prototype = {
         /// <returns type="cfx.gauge.ez"/>
         return new ez();
     },
+    getInverted: function () {
+        /// <returns type="bool"/>
+        return true;
+    },
+    setInverted: function (value) {
+        /// <param name="value" type="bool"/>>
+    },
     getLabelSpacing: function () {
         /// <summary>{vert} the space between the labels in a Scale.</summary>
         /// <returns type="number"/>
@@ -12032,8 +12447,8 @@ ex.prototype = {
     },
     getTextColor: function () {
         /// <summary>Gets the text color of the scale's labels.</summary>
-        /// <returns type="Object"/>
-        return new ();
+        /// <returns type="string"/>
+        return "";
     },
     setTextColor: function (value) {
         /// <summary>Sets the text color of the scale's labels.</summary>
@@ -12166,6 +12581,13 @@ ey.prototype = {
         /// <returns type="cfx.gauge.ez"/>
         return new ez();
     },
+    getInverted: function () {
+        /// <returns type="bool"/>
+        return true;
+    },
+    setInverted: function (value) {
+        /// <param name="value" type="bool"/>>
+    },
     getLabelSpacing: function () {
         /// <summary>{vert} the space between the labels in a Scale.</summary>
         /// <returns type="number"/>
@@ -12235,8 +12657,8 @@ ey.prototype = {
     },
     getTextColor: function () {
         /// <summary>Gets the text color of the scale's labels.</summary>
-        /// <returns type="Object"/>
-        return new ();
+        /// <returns type="string"/>
+        return "";
     },
     setTextColor: function (value) {
         /// <summary>Sets the text color of the scale's labels.</summary>
@@ -12346,6 +12768,13 @@ LinearScale.prototype = {
         /// <returns type="cfx.gauge.ez"/>
         return new ez();
     },
+    getInverted: function () {
+        /// <returns type="bool"/>
+        return true;
+    },
+    setInverted: function (value) {
+        /// <param name="value" type="bool"/>>
+    },
     getLabelSpacing: function () {
         /// <summary>{vert} the space between the labels in a Scale.</summary>
         /// <returns type="number"/>
@@ -12415,8 +12844,8 @@ LinearScale.prototype = {
     },
     getTextColor: function () {
         /// <summary>Gets the text color of the scale's labels.</summary>
-        /// <returns type="Object"/>
-        return new ();
+        /// <returns type="string"/>
+        return "";
     },
     setTextColor: function (value) {
         /// <summary>Sets the text color of the scale's labels.</summary>
@@ -12494,8 +12923,8 @@ cfx.gauge.eA = eA;
 eA.prototype = {
     getBorderColor: function () {
         /// <summary>Gets the border color of an indicator.</summary>
-        /// <returns type="Object"/>
-        return new ();
+        /// <returns type="string"/>
+        return "";
     },
     setBorderColor: function (value) {
         /// <summary>Sets the border color of an indicator.</summary>
@@ -12503,8 +12932,8 @@ eA.prototype = {
     },
     getColor: function () {
         /// <summary>Gets the color of an indicator.</summary>
-        /// <returns type="Object"/>
-        return new ();
+        /// <returns type="string"/>
+        return "";
     },
     setColor: function (value) {
         /// <summary>Sets the color of an indicator.</summary>
@@ -12608,8 +13037,8 @@ cfx.gauge.Needle = Needle;
 Needle.prototype = {
     getBorderColor: function () {
         /// <summary>Gets the border color of an indicator.</summary>
-        /// <returns type="Object"/>
-        return new ();
+        /// <returns type="string"/>
+        return "";
     },
     setBorderColor: function (value) {
         /// <summary>Sets the border color of an indicator.</summary>
@@ -12617,8 +13046,8 @@ Needle.prototype = {
     },
     getColor: function () {
         /// <summary>Gets the color of an indicator.</summary>
-        /// <returns type="Object"/>
-        return new ();
+        /// <returns type="string"/>
+        return "";
     },
     setColor: function (value) {
         /// <summary>Sets the color of an indicator.</summary>
@@ -12731,8 +13160,8 @@ Marker.prototype = {
     },
     getBorderColor: function () {
         /// <summary>Gets the border color of an indicator.</summary>
-        /// <returns type="Object"/>
-        return new ();
+        /// <returns type="string"/>
+        return "";
     },
     setBorderColor: function (value) {
         /// <summary>Sets the border color of an indicator.</summary>
@@ -12740,8 +13169,8 @@ Marker.prototype = {
     },
     getColor: function () {
         /// <summary>Gets the color of an indicator.</summary>
-        /// <returns type="Object"/>
-        return new ();
+        /// <returns type="string"/>
+        return "";
     },
     setColor: function (value) {
         /// <summary>Sets the color of an indicator.</summary>
@@ -12845,8 +13274,8 @@ cfx.gauge.Repeater = Repeater;
 Repeater.prototype = {
     getOffBorderColor: function () {
         /// <summary>Description goes here</summary>
-        /// <returns type="Object"/>
-        return new ();
+        /// <returns type="string"/>
+        return "";
     },
     setOffBorderColor: function (value) {
         /// <summary>Description goes here</summary>
@@ -12854,8 +13283,8 @@ Repeater.prototype = {
     },
     getOffColor: function () {
         /// <summary>Description goes here</summary>
-        /// <returns type="Object"/>
-        return new ();
+        /// <returns type="string"/>
+        return "";
     },
     setOffColor: function (value) {
         /// <summary>Description goes here</summary>
@@ -12890,8 +13319,8 @@ Repeater.prototype = {
     },
     getBorderColor: function () {
         /// <summary>Gets the border color of an indicator.</summary>
-        /// <returns type="Object"/>
-        return new ();
+        /// <returns type="string"/>
+        return "";
     },
     setBorderColor: function (value) {
         /// <summary>Sets the border color of an indicator.</summary>
@@ -12899,8 +13328,8 @@ Repeater.prototype = {
     },
     getColor: function () {
         /// <summary>Gets the color of an indicator.</summary>
-        /// <returns type="Object"/>
-        return new ();
+        /// <returns type="string"/>
+        return "";
     },
     setColor: function (value) {
         /// <summary>Sets the color of an indicator.</summary>
@@ -13004,8 +13433,8 @@ cfx.gauge.Filler = Filler;
 Filler.prototype = {
     getBorderColor: function () {
         /// <summary>Gets the border color of an indicator.</summary>
-        /// <returns type="Object"/>
-        return new ();
+        /// <returns type="string"/>
+        return "";
     },
     setBorderColor: function (value) {
         /// <summary>Sets the border color of an indicator.</summary>
@@ -13013,8 +13442,8 @@ Filler.prototype = {
     },
     getColor: function () {
         /// <summary>Gets the color of an indicator.</summary>
-        /// <returns type="Object"/>
-        return new ();
+        /// <returns type="string"/>
+        return "";
     },
     setColor: function (value) {
         /// <summary>Sets the color of an indicator.</summary>
@@ -13118,8 +13547,8 @@ cfx.gauge.eC = eC;
 eC.prototype = {
     getColor: function () {
         /// <summary>Gets the outside color for a gauge border.</summary>
-        /// <returns type="Object"/>
-        return new ();
+        /// <returns type="string"/>
+        return "";
     },
     setColor: function (value) {
         /// <summary>Sets the outside color for a gauge border.</summary>
@@ -13132,8 +13561,8 @@ eC.prototype = {
     },
     getInsideColor: function () {
         /// <summary>Gets the internal color for a gauge border.</summary>
-        /// <returns type="Object"/>
-        return new ();
+        /// <returns type="string"/>
+        return "";
     },
     setInsideColor: function (value) {
         /// <summary>Sets the internal color for a gauge border.</summary>
@@ -13202,7 +13631,7 @@ BorderedControl.prototype = {
         return new en();
     },
     addExtension: function (obj) {
-        /// <param name="obj" type="?"/>>
+        /// <param name="obj" type="object"/>>
     }
 };
 
@@ -13300,12 +13729,15 @@ Trend.prototype = {
     },
     getTextColor: function () {
         /// <summary>Gets the color of the text used by all Trend elements.</summary>
-        /// <returns type="Object"/>
-        return new ();
+        /// <returns type="string"/>
+        return "";
     },
     setTextColor: function (value) {
         /// <summary>Sets the color of the text used by all Trend elements.</summary>
         /// <param name="value" type="String"/>>
+    },
+    create: function (div) {
+        /// <param name="div" type="object"/>>
     },
     getExtensions: function () {
         /// <summary>Description goes here</summary>
@@ -13323,7 +13755,7 @@ Trend.prototype = {
         return new en();
     },
     addExtension: function (obj) {
-        /// <param name="obj" type="?"/>>
+        /// <param name="obj" type="object"/>>
     }
 };
 
@@ -13331,12 +13763,23 @@ var PictoGraph = function() {
 }
 cfx.gauge.PictoGraph = PictoGraph;
 PictoGraph.prototype = {
+    getBorder: function () {
+        /// <returns type="cfx.gauge.eC"/>
+        return new eC();
+    },
     getCount: function () {
         /// <returns type="number"/>
         return 0;
     },
     setCount: function (value) {
         /// <param name="value" type="number"/>>
+    },
+    getForceBorder: function () {
+        /// <returns type="bool"/>
+        return true;
+    },
+    setForceBorder: function (value) {
+        /// <param name="value" type="bool"/>>
     },
     getFractionDisplay: function () {
         /// <returns type="cfx.gauge.FractionDisplay"/>
@@ -13346,11 +13789,11 @@ PictoGraph.prototype = {
         /// <param name="value" type="cfx.gauge.FractionDisplay"/>>
     },
     getLayout: function () {
-        /// <returns type="cfx.gauge.d$"/>
-        return new d$();
+        /// <returns type="cfx.gauge.PictoLayout"/>
+        return new PictoLayout();
     },
     setLayout: function (value) {
-        /// <param name="value" type="cfx.gauge.d$"/>>
+        /// <param name="value" type="cfx.gauge.PictoLayout"/>>
     },
     getMainMeasure: function () {
         /// <returns type="cfx.gauge.PictoMeasure"/>
@@ -13378,6 +13821,9 @@ PictoGraph.prototype = {
         /// <returns type="cfx.gauge.PictoMeasure"/>
         return new PictoMeasure();
     },
+    create: function (div) {
+        /// <param name="div" type="object"/>>
+    },
     getExtensions: function () {
         /// <summary>Description goes here</summary>
         /// <returns type="cfx.gauge.el"/>
@@ -13394,7 +13840,7 @@ PictoGraph.prototype = {
         return new en();
     },
     addExtension: function (obj) {
-        /// <param name="obj" type="?"/>>
+        /// <param name="obj" type="object"/>>
     }
 };
 
@@ -13404,8 +13850,8 @@ cfx.gauge.Border = Border;
 Border.prototype = {
     getColor: function () {
         /// <summary>Gets the outside color for a border.</summary>
-        /// <returns type="Object"/>
-        return new ();
+        /// <returns type="string"/>
+        return "";
     },
     setColor: function (value) {
         /// <summary>Sets the outside color for a border.</summary>
@@ -13413,8 +13859,8 @@ Border.prototype = {
     },
     getInsideColor: function () {
         /// <summary>Gets the internal color for a border.</summary>
-        /// <returns type="Object"/>
-        return new ();
+        /// <returns type="string"/>
+        return "";
     },
     setInsideColor: function (value) {
         /// <summary>Sets the internal color for a border.</summary>
@@ -13447,6 +13893,9 @@ Border.prototype = {
         /// <summary>Specifies the vector template used to describe the border.</summary>
         /// <param name="value" type="string"/>>
     },
+    create: function (div) {
+        /// <param name="div" type="object"/>>
+    },
     getExtensions: function () {
         /// <summary>Description goes here</summary>
         /// <returns type="cfx.gauge.el"/>
@@ -13463,7 +13912,7 @@ Border.prototype = {
         return new en();
     },
     addExtension: function (obj) {
-        /// <param name="obj" type="?"/>>
+        /// <param name="obj" type="object"/>>
     }
 };
 
@@ -13543,12 +13992,15 @@ Gauge.prototype = {
     },
     getTextColor: function () {
         /// <summary>Gets the color used by the gauge's text.</summary>
-        /// <returns type="Object"/>
-        return new ();
+        /// <returns type="string"/>
+        return "";
     },
     setTextColor: function (value) {
         /// <summary>Sets the color used by the gauge's text.</summary>
         /// <param name="value" type="String"/>>
+    },
+    create: function (div) {
+        /// <param name="div" type="object"/>>
     },
     getExtensions: function () {
         /// <summary>Description goes here</summary>
@@ -13566,7 +14018,7 @@ Gauge.prototype = {
         return new en();
     },
     addExtension: function (obj) {
-        /// <param name="obj" type="?"/>>
+        /// <param name="obj" type="object"/>>
     }
 };
 
@@ -13651,12 +14103,15 @@ LinearGauge.prototype = {
     },
     getTextColor: function () {
         /// <summary>Gets the color used by the gauge's text.</summary>
-        /// <returns type="Object"/>
-        return new ();
+        /// <returns type="string"/>
+        return "";
     },
     setTextColor: function (value) {
         /// <summary>Sets the color used by the gauge's text.</summary>
         /// <param name="value" type="String"/>>
+    },
+    create: function (div) {
+        /// <param name="div" type="object"/>>
     },
     getExtensions: function () {
         /// <summary>Description goes here</summary>
@@ -13674,7 +14129,7 @@ LinearGauge.prototype = {
         return new en();
     },
     addExtension: function (obj) {
-        /// <param name="obj" type="?"/>>
+        /// <param name="obj" type="object"/>>
     }
 };
 
@@ -13759,12 +14214,15 @@ VerticalGauge.prototype = {
     },
     getTextColor: function () {
         /// <summary>Gets the color used by the gauge's text.</summary>
-        /// <returns type="Object"/>
-        return new ();
+        /// <returns type="string"/>
+        return "";
     },
     setTextColor: function (value) {
         /// <summary>Sets the color used by the gauge's text.</summary>
         /// <param name="value" type="String"/>>
+    },
+    create: function (div) {
+        /// <param name="div" type="object"/>>
     },
     getExtensions: function () {
         /// <summary>Description goes here</summary>
@@ -13782,7 +14240,7 @@ VerticalGauge.prototype = {
         return new en();
     },
     addExtension: function (obj) {
-        /// <param name="obj" type="?"/>>
+        /// <param name="obj" type="object"/>>
     }
 };
 
@@ -13867,12 +14325,15 @@ HorizontalGauge.prototype = {
     },
     getTextColor: function () {
         /// <summary>Gets the color used by the gauge's text.</summary>
-        /// <returns type="Object"/>
-        return new ();
+        /// <returns type="string"/>
+        return "";
     },
     setTextColor: function (value) {
         /// <summary>Sets the color used by the gauge's text.</summary>
         /// <param name="value" type="String"/>>
+    },
+    create: function (div) {
+        /// <param name="div" type="object"/>>
     },
     getExtensions: function () {
         /// <summary>Description goes here</summary>
@@ -13890,7 +14351,7 @@ HorizontalGauge.prototype = {
         return new en();
     },
     addExtension: function (obj) {
-        /// <param name="obj" type="?"/>>
+        /// <param name="obj" type="object"/>>
     }
 };
 
@@ -13975,12 +14436,15 @@ RadialGauge.prototype = {
     },
     getTextColor: function () {
         /// <summary>Gets the color used by the gauge's text.</summary>
-        /// <returns type="Object"/>
-        return new ();
+        /// <returns type="string"/>
+        return "";
     },
     setTextColor: function (value) {
         /// <summary>Sets the color used by the gauge's text.</summary>
         /// <param name="value" type="String"/>>
+    },
+    create: function (div) {
+        /// <param name="div" type="object"/>>
     },
     getExtensions: function () {
         /// <summary>Description goes here</summary>
@@ -13998,7 +14462,7 @@ RadialGauge.prototype = {
         return new en();
     },
     addExtension: function (obj) {
-        /// <param name="obj" type="?"/>>
+        /// <param name="obj" type="object"/>>
     }
 };
 })();

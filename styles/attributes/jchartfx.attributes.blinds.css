@@ -1,0 +1,302 @@
+.jchartfx {
+    font-family: Calibri, sans-serif;
+    font-size: 9pt;
+    line-height: normal;
+}
+
+.jchartfxToolTip {
+    padding: 3px;
+    font-size: 12pt;
+    font-family: Calibri, sans-serif;
+    font-weight: bold;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    pointer-events: none;
+    border-style: solid;
+    border-width: 1px;
+}
+
+.jchartfxToolTipVisible {
+    opacity: 1;
+    -webkit-transition: opacity 0.5s ease-in-out;
+    -moz-transition: opacity 0.5s ease-in-out;
+    -o-transition: opacity 0.5s ease-in-out;
+    -ms-transition: opacity 0.5s ease-in-out;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.jchartfxToolTipHidden {
+    opacity: 0;
+    -webkit-transition: opacity 0.5s ease-in-out;
+    -moz-transition: opacity 0.5s ease-in-out;
+    -o-transition: opacity 0.5s ease-in-out;
+    -ms-transition: opacity 0.5s ease-in-out;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.jchartfxToolTip2 {
+    pointer-events: none;
+}
+
+.jchartfxToolTip2Visible {
+    opacity: 1;
+    -webkit-transition: opacity 0.5s ease-in-out;
+    -moz-transition: opacity 0.5s ease-in-out;
+    -o-transition: opacity 0.5s ease-in-out;
+    -ms-transition: opacity 0.5s ease-in-out;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.jchartfxToolTip2Hidden {
+    opacity: 0;
+    -webkit-transition: opacity 0.5s ease-in-out;
+    -moz-transition: opacity 0.5s ease-in-out;
+    -o-transition: opacity 0.5s ease-in-out;
+    -ms-transition: opacity 0.5s ease-in-out;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.jchartfx .Attribute {
+    stroke-width: 1;
+}
+
+.jchartfx .AttributeLine {
+    stroke-width: 2;
+}
+
+.jchartfx .MarkerHollow {
+    stroke-width: 2;
+}
+
+.jchartfx .Marker {
+    stroke-width: 2;
+}
+
+.jchartfx .Border {
+    stroke-width: 1;
+}
+
+.jchartfx .PlotArea {
+    stroke-width: 1;
+}
+
+.jchartfx .PlotArea3D {
+    stroke-width: 1;
+}
+
+.jchartfx .AxisY_Line {
+    stroke-width: 2;
+}
+
+.jchartfx .AxisX_Line {
+    stroke-width: 2;
+}
+
+.jchartfx .Title {
+    font-size: 9pt;
+    font-weight: bold;
+}
+
+.jchartfx .LegendBox {
+    stroke-width: 1;
+}
+
+.jchartfx .PointLabel {
+    font-size: 10pt;
+    text-shadow: 1px 1px 1px #DDDDDD;
+}
+
+.jchartfx .ScrollBar {
+    stroke-width: 1;
+}
+
+.jchartfx .EqualizerTop0 {
+    stroke-width: 1;
+}
+
+.jchartfx .EqualizerTop1 {
+    stroke-width: 1;
+}
+
+.jchartfx .GaugeTitle {
+    font-size: 10pt;
+}
+
+.jchartfx .GaugeTitleLarge {
+    font-size: 40pt;
+}
+
+.jchartfx .Separator {
+    stroke-width: 1;
+}
+
+.jchartfx .MapContext {
+    stroke-width: 1;
+}
+
+.jchartfx .MapWater {
+    stroke-width: 1;
+}
+
+.jchartfx .MapAttribute {
+    stroke-width: 1;
+}
+
+.jchartfx .MapRoad {
+    stroke-width: 1;
+}
+
+.jchartfx .MapRoadBack {
+    stroke-width: 3;
+}
+
+.jchartfx .MapRoad0 {
+    stroke-width: 1;
+}
+
+.jchartfx .MapRoad0Back {
+    stroke-width: 3;
+}
+
+.jchartfx .MapRoad1 {
+    stroke-width: 1;
+}
+
+.jchartfx .MapRoad1Back {
+    stroke-width: 0;
+}
+
+.jchartfx .DashboardTitle {
+    font-size: 12pt;
+}
+
+.jchartfx_container, .jchartfx_container *
+{  
+    font-family: Calibri, sans-serif;
+}
+
+.jchartfx_container table
+{ 
+    border-top:1px solid; 
+    border-left:1px solid; 
+    border-right:1px solid; 
+    margin:60px 2.5%;  
+    width:95%; 
+    border-spacing: 0px;
+    box-shadow: none !important;
+    font-size: 9pt;
+    line-height: 10px;
+}
+
+.jchartfx_container table thead tr th
+{
+    border-right:1px solid;  
+    border-bottom:1px solid;  
+    text-align: left; 
+    padding:3px; 
+    font-weight: normal;
+    text-align: center;
+}
+
+.jchartfx_container table thead tr th:last-child 
+{
+    border-right:0px solid;
+
+}
+
+.jchartfx_container table tbody tr td
+{
+    padding:3px; 
+    border-right:1px solid;
+    border-bottom:1px solid;
+}
+
+.jchartfx_container table tbody tr:last-child
+{
+    border-bottom:0px solid;
+}
+
+.jchartfx_container table tbody tr td:last-child
+{
+    border-right:0px solid;
+}
+
+.jchartfx_container .labelIndicator 
+{
+    text-align:center;
+    margin-top: 53px;
+    font-size:25pt; 
+    line-height:1em;
+}
+
+.jchartfx_container .label {
+    text-align: center;
+    vertical-align:middle;
+    font-size: 12pt;
+    line-height:1em;
+}
+
+.jchartfx_container .smallLabel {
+    font-size: 9pt;
+    text-align: center;
+    vertical-align:middle;
+    line-height:1em;
+}
+
+.jchartfx .BorderMedium {
+    stroke-width: 4;
+}
+
+.jchartfx .BorderThick {
+    stroke-width: 8;
+}
+
+.jchartfx .Border0 {
+    stroke-width: 1;
+}
+
+.jchartfx .Border1 {
+    stroke-width: 1;
+}
+
+.jchartfx .Border2 {
+    stroke-width: 1;
+}
+
+.jchartfx .Border3 {
+    stroke-width: 1;
+}
+
+.jchartfx .Border4 {
+    stroke-width: 1;
+}
+
+.jchartfx .Border5 {
+    stroke-width: 1;
+}
+
+.jchartfx .Border6 {
+    stroke-width: 1;
+}
+
+.jchartfx .Border7 {
+    stroke-width: 1;
+}
+
+.jchartfx-menu-callout {
+  border: 1px solid;
+  border-radius: 0px;
+  font-size: 16px;
+}
+
+.jchartfx-menu {
+  border: 1px solid;
+  border-radius: 0px;
+   -webkit-box-shadow: 0 0px 0px 0;
+  box-shadow: 0 0px 0px 0;
+ }
+ 
+ .jchartfx-menu .cfxcombo {
+    font-family: Calibri, sans-serif;
+    font-size: 9pt;
+}

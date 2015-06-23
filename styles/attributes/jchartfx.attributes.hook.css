@@ -1,6 +1,7 @@
 .jchartfx {
     font-family: Arial,helvetica,sans-serif;
     font-size: 8pt;
+    line-height: normal;
 }
 
 .jchartfxToolTip {
@@ -111,26 +112,15 @@
     stroke-width: 1;
 }
 
-.jchartfx_gauge .Border {
-    stroke-width: 1;
-}
-
-.jchartfx_gauge .Text {
-    font-family: Arial,helvetica,sans-serif;
-    font-size: 8pt;
-}
-
-.jchartfx_gauge .Title {
-    font-family: Arial,helvetica,sans-serif;
+.jchartfx .GaugeTitle {
     font-size: 10pt;
 }
 
-.jchartfx_gauge .TitleLarge {
-    font-family: Arial,helvetica,sans-serif;
+.jchartfx .GaugeTitleLarge {
     font-size: 30pt;
 }
 
-.jchartfx_gauge .Separator {
+.jchartfx .Separator {
     stroke-width: 1;
 }
 
@@ -172,12 +162,6 @@
 
 .jchartfx .DashboardTitle {
     font-size: 11pt;
-    font-family: Arial,helvetica,sans-serif;
-}
-
-.jchartfx_gauge .DashboardTitle {
-    font-size: 11pt;
-    font-family: Arial,helvetica,sans-serif;
 }
 
 .jchartfx_container, .jchartfx_container *
@@ -258,14 +242,6 @@
     line-height:1em;
 }
 
-.jchartfx_gauge .BorderMedium {
-    stroke-width: 4;
-}
-
-.jchartfx_gauge .BorderThick {
-    stroke-width: 8;
-}
-
 .jchartfx .BorderMedium {
     stroke-width: 4;
 }
@@ -303,38 +279,6 @@
 }
 
 .jchartfx .Border7 {
-    stroke-width: 1;
-}
-
-.jchartfx_gauge .Border0 {
-    stroke-width: 1;
-}
-
-.jchartfx_gauge .Border1 {
-    stroke-width: 1;
-}
-
-.jchartfx_gauge .Border2 {
-    stroke-width: 1;
-}
-
-.jchartfx_gauge .Border3 {
-    stroke-width: 1;
-}
-
-.jchartfx_gauge .Border4 {
-    stroke-width: 1;
-}
-
-.jchartfx_gauge .Border5 {
-    stroke-width: 1;
-}
-
-.jchartfx_gauge .Border6 {
-    stroke-width: 1;
-}
-
-.jchartfx_gauge .Border7 {
     stroke-width: 1;
 }
 

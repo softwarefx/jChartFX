@@ -8,10 +8,10 @@
         "graph",
         "graphics"
     ],
-    "version": "7.3.5518",
+    "version": "7.4.5649",
     "author": {
         "name": "Software FX",
-        "url": "http://www.jchartfx.com"
+        "url" : "http://www.jchartfx.com"
     },
     "maintainers": [
         {

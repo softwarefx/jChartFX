@@ -1,6 +1,7 @@
 .jchartfx {
     font-family: Arial;
     font-size: 8pt;
+    line-height: normal;
 }
 
 .jchartfxToolTip {
@@ -111,35 +112,16 @@
     stroke-width: 1;
 }
 
-.jchartfx_gauge .Border {
-    stroke-width: 1;
-}
-
-.jchartfx_gauge .Text {
-    font-family: Arial;
-    font-size: 8pt;
-}
-
-.jchartfx_gauge .Title {
-    font-family: Arial;
+.jchartfx .GaugeTitle {
     font-size: 10pt;
 }
 
-.jchartfx_gauge .TitleLarge {
-    font-family: Arial;
+.jchartfx .GaugeTitleLarge {
     font-size: 40pt;
 }
 
-.jchartfx_gauge .Separator {
+.jchartfx .Separator {
     stroke-width: 1;
-}
-
-.jchartfx .DashboardTitle {
-    font-family: Arial;
-}
-
-.jchartfx_gauge .DashboardTitle {
-    font-family: Arial;
 }
 
 .jchartfx .MapContext {
@@ -226,14 +208,6 @@
     line-height:1em;
 }
 
-.jchartfx_gauge .BorderMedium {
-    stroke-width: 4;
-}
-
-.jchartfx_gauge .BorderThick {
-    stroke-width: 8;
-}
-
 .jchartfx .BorderMedium {
     stroke-width: 4;
 }
@@ -271,38 +245,6 @@
 }
 
 .jchartfx .Border7 {
-    stroke-width: 1;
-}
-
-.jchartfx_gauge .Border0 {
-    stroke-width: 1;
-}
-
-.jchartfx_gauge .Border1 {
-    stroke-width: 1;
-}
-
-.jchartfx_gauge .Border2 {
-    stroke-width: 1;
-}
-
-.jchartfx_gauge .Border3 {
-    stroke-width: 1;
-}
-
-.jchartfx_gauge .Border4 {
-    stroke-width: 1;
-}
-
-.jchartfx_gauge .Border5 {
-    stroke-width: 1;
-}
-
-.jchartfx_gauge .Border6 {
-    stroke-width: 1;
-}
-
-.jchartfx_gauge .Border7 {
     stroke-width: 1;
 }
 

@@ -2,6 +2,7 @@
     font-family: 'Segoe UI', Helvetica, Arial, sans-serif;
     font-weight: normal;
     font-size: 8pt;
+    line-height: normal;
 }
 
 .jchartfxToolTip {
@@ -113,23 +114,12 @@
     stroke-width: 1;
 }
 
-.jchartfx_gauge .Border {
-    stroke-width: 1;
-}
-
-.jchartfx_gauge .Text {
-    font-family: 'Segoe UI', Helvetica, Arial, sans-serif;
-    font-weight: normal;
-    font-size: 8pt;
-}
-
-.jchartfx_gauge .Title {
-    font-family: 'Segoe UI', Helvetica, Arial, sans-serif;
+.jchartfx .GaugeTitle {
     font-weight: bold;
     font-size: 10.5pt;
 }
 
-.jchartfx_gauge .Separator {
+.jchartfx .Separator {
     stroke-width: 1;
 }
 
@@ -173,24 +163,17 @@
     stroke-width: 1;
 }
 
-.jchartfx_gauge .TitleLarge {
-    font-family: 'Segoe UI', Helvetica, Arial, sans-serif;
+.jchartfx .GaugeTitleLarge {
     font-size: 40pt;
 }
 
 .jchartfx .DashboardTitle {
     font-size: 10.5pt;
-    font-family: 'Segoe UI', Helvetica, Arial, sans-serif;
-}
-
-.jchartfx_gauge .DashboardTitle {
-    font-size: 10.5pt;
-    font-family: 'Segoe UI', Helvetica, Arial, sans-serif;
 }
 
 .jchartfx_container, .jchartfx_container *
 {  
-    font-family: 'segoe ui', Helvetica, Arial, sans-serif; 
+    font-family: 'Segoe UI', Helvetica, Arial, sans-serif; 
 }
 
 .jchartfx_container table
@@ -239,14 +222,6 @@
     line-height:1em;
 }
 
-.jchartfx_gauge .BorderMedium {
-    stroke-width: 4;
-}
-
-.jchartfx_gauge .BorderThick {
-    stroke-width: 8;
-}
-
 .jchartfx .BorderMedium {
     stroke-width: 4;
 }
@@ -287,40 +262,12 @@
     stroke-width: 1;
 }
 
-.jchartfx_gauge .Border0 {
-    stroke-width: 1;
-}
-
-.jchartfx_gauge .Border1 {
-    stroke-width: 1;
-}
-
-.jchartfx_gauge .Border2 {
-    stroke-width: 1;
-}
-
-.jchartfx_gauge .Border3 {
-    stroke-width: 1;
-}
-
-.jchartfx_gauge .Border4 {
-    stroke-width: 1;
-}
-
-.jchartfx_gauge .Border5 {
-    stroke-width: 1;
-}
-
-.jchartfx_gauge .Border6 {
-    stroke-width: 1;
-}
-
-.jchartfx_gauge .Border7 {
-    stroke-width: 1;
-}
-
 .jchartfx-menu .cfxcombo {
     font-family: 'Segoe UI', Helvetica, Arial, sans-serif;
     font-weight: normal;
     font-size: 8pt;
+}
+
+.jchartfx .StackedLabel {
+	font-weight: bold;
 }

@@ -1,6 +1,7 @@
 .jchartfx {
     font-family: 'Segoe UI','Lucida Grande';
     font-size: 9pt;
+    line-height: normal;
 }
 
 .jchartfxToolTip {
@@ -170,36 +171,19 @@
     stroke-width: 1;
 }
 
-.jchartfx_gauge .Border {
-    stroke-width: 1;
-}
-
-.jchartfx_gauge .Text {
-    font-family: 'Segoe UI','Lucida Grande';
-    font-size: 9pt;
-}
-
-.jchartfx_gauge .Title {
-    font-family: 'Segoe UI','Lucida Grande';
+.jchartfx .GaugeTitle {
     font-size: 10pt;
 }
 
-.jchartfx_gauge .TitleLarge {
-    font-family: 'Segoe UI','Lucida Grande';
+.jchartfx .GaugeTitleLarge {
     font-size: 40pt;
 }
 
-.jchartfx_gauge .Separator {
+.jchartfx .Separator {
     stroke-width: 1;
 }
 
 .jchartfx .DashboardTitle {
-    font-family: 'Segoe UI','Lucida Grande';
-    font-size: 11pt;
-}
-
-.jchartfx_gauge .DashboardTitle {
-    font-family: 'Segoe UI','Lucida Grande';
     font-size: 11pt;
 }
 
@@ -237,7 +221,6 @@
     line-height:1em;
 }
 
-
 .jchartfx_container .label {
     text-align: center;
     vertical-align:middle;
@@ -250,14 +233,6 @@
     text-align: center;
     vertical-align:middle;
     line-height:1em;
-}
-
-.jchartfx_gauge .BorderMedium {
-    stroke-width: 4;
-}
-
-.jchartfx_gauge .BorderThick {
-    stroke-width: 8;
 }
 
 .jchartfx .Border0 {
@@ -292,39 +267,15 @@
     stroke-width: 1;
 }
 
-.jchartfx_gauge .Border0 {
-    stroke-width: 1;
-}
-
-.jchartfx_gauge .Border1 {
-    stroke-width: 1;
-}
-
-.jchartfx_gauge .Border2 {
-    stroke-width: 1;
-}
-
-.jchartfx_gauge .Border3 {
-    stroke-width: 1;
-}
-
-.jchartfx_gauge .Border4 {
-    stroke-width: 1;
-}
-
-.jchartfx_gauge .Border5 {
-    stroke-width: 1;
-}
-
-.jchartfx_gauge .Border6 {
-    stroke-width: 1;
-}
-
-.jchartfx_gauge .Border7 {
-    stroke-width: 1;
-}
-
 .jchartfx-menu .cfxcombo {
     font-family: 'Segoe UI','Lucida Grande';
     font-size: 9pt;
+}
+
+.jchartfx .StackedLabel {
+	font-weight: bold;
+}
+
+.jchartfx-icon-menu:before {
+    content: "\e654";
 }

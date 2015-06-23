@@ -5,9 +5,9 @@
 - Licensing: [http://www.jChartFX.com/eula/](http://www.jChartFX.com/eula/ "Licensing")
 - Support: [http://support.softwarefx.com/jChartFX](http://support.softwarefx.com/jChartFX "Support")
 
-##Installation##
-- Install with [Bower](http://bower.io "Bower"): `bower install jChartFX`
-- Install with [npm](https://www.npmjs.com/~softwarefx "npm"): ` npm install jChartFX`
+## Installation ##
+- Install with [Bower](http://bower.io "Bower"): `bower install jchartfx`
+- Install with [npm](https://www.npmjs.com/~softwarefx "npm"): ` npm install jchartfx` *[Node.js support is coming soon]*
 - Install with [NuGet](http://www.nuget.org/packages/jChartFX/ "NuGet"): `Install-Package jChartFX` 
 
 
@@ -26,7 +26,7 @@ Please access our community driven forums here:
 
 **jChartFX** was tailored specifically to enhance your data visualization capabilities and needs. The following features make **jChartFX** the most compelling charting tool for JavaScript/HTML5 developers:
 
-### Free is Free !###
+### Free is Free ! ###
 
 jChartFX is available to HTML5, jQuery and JavaScript developers absolutely FREE. You can integrate and deploy jChartFX even in your commercial web sites at no cost.
 
@@ -65,7 +65,7 @@ You can obtain current and past versions of jChartFX for free from: [jChartFX Do
 You can also install the jChartFX package from: 
 
 - Bower
-- npm
+- npm *[Node.js support is coming soon]*
 - NuGet  
 
 The jChartFX libraries have been split into several .js files to provide granular control over what you add as a reference in your html thus allowing you to limit what the browser downloads when the page is accessed.
@@ -105,6 +105,7 @@ While the core .js files include basic galleries such as bars, lines and pie, jC
 - *jchartfx.maps.js*: Provides access to the Maps extension. Use this library when you need to integrate geographic maps with full support of latitude and longitude coordinates
 - *jchartfx.overlaybubble.js*: Contains the OverlayBubble gallery
 - *jchartfx.pareto.js*: Contains the Pareto Chart gallery
+- *jchartfx.pictograph.js*: Contains the PictoGraph Control, the PictoGraph extension and the PictoBar extension
 - *jchartfx.pyramid.js*: Contains the Pyramid gallery
 - *jchartfx.radar.js*: Contains the Radar gallery
 - *jchartfx.rose.js*: Contains the Rose gallery
@@ -115,7 +116,7 @@ While the core .js files include basic galleries such as bars, lines and pie, jC
 
 For additional information on the available galleries, refer to the Gallery Types section of the [Programmer's Guide](http://support.softwarefx.com/jChartFX/pg "Programmer's Guide").
 
-###Visual Studio IntelliSense###
+### Visual Studio IntelliSense ###
 
 jChartFX provides JavaScript IntelliSense auto-completion support if you use Microsoft Visual Studio as your IDE. To enable this feature, include *jchartfx.visualstudio.js* library in your project and add a reference directive in your JavaScript code as an XML comment:
 
@@ -123,8 +124,37 @@ jChartFX provides JavaScript IntelliSense auto-completion support if you use Mic
     /// <reference path="Scripts/jchartfx.visualstudio.js"/>
     // your JavaScript Code
 
+### Tern code editor plugin ###
 
-###jChartFX Maps###
+There is currently Tern support for different editors, like for example:
+
+- Emacs
+- Vim
+- Sublime Text
+- Light Table
+- Eclipse
+
+To enable Autocompletion, argument hints and other editing features, you need to download and install the Tern package (search for instructions on how to install the Tern plugin for your editor) and then include *jchartfx.tern.json* as an additional JSON type definition in your preferred editor.
+
+For example, when using Sublime Text(2/3), make sure to copy jchartfx.tern.json file in the tern pakage defs folder: 
+
+
+    \..\Sublime Text 2\Packages\tern_for_sublime\node_modules\tern\defs\jchartfx.tern.json
+
+### TypeScript code-analysis ###
+
+When working with TypeScript code, jChartFX provides auto-completion and error highlighting support around the TypeScript language. You can use the editor/IDE of your choice where TypeScript is supported.
+
+To enable this feature, include *jchartfx.d.ts* file in your project and add a reference directive in your TypeScript code as an XML comment:
+
+    /// <reference path="include/jchartfx.d.ts"/>
+    // your TypeScript Code
+
+### User Interface ###
+If you want to use the jChartFX UI Menu, you must include the *jchartfx.userinterface.css* file along with *jchartfx.userinterface.js*. Please read the online documentation for any additional licensing restriction that may apply to the UI feature.
+
+
+### jChartFX Maps ###
 
 A complete set of hundreds of maps compatible with the jChartFX Maps extension is available for download at the Software FX Maps Marketplace: [http://maps.softwarefx.com](http://maps.softwarefx.com "Maps MarketPlace")
 
@@ -240,7 +270,7 @@ In the case of JQuery users, we simply call `chart()` on the target `div`:
 
 
 
-###Configuring your chart###
+### Configuring your chart ###
 
 By default, jChartFX charts will show a basic chart that uses a default gallery type and look to display generic random data. Thanks to the extensive API, you will have a great degree of control over the chart and the way it displays your data. You can manipulate the different chart elements with the help of the get and set methods for the different chart properties.
 
@@ -337,7 +367,7 @@ The jChartFX download includes a sample CSS file that provides guidance on how t
 Additionally, jChartFX has built-in support for [ThemeRoller](http://jqueryui.com/themeroller/ "ThemeRoller"), allowing you to seamlessly integrate a chart with any page using styled [JQuery UI](http://jqueryui.com/ "jQuery UI") controls.
 
 
-###jChartFX Styles and Motifs###
+### jChartFX Styles and Motifs ###
 
 jChartFX includes a series of CSS files that allow you to easily customize any of the controls through style sheets. More than 60 different looks and color styles are available. There is a pair of files for each of the different looks and styles:
 
@@ -364,23 +394,30 @@ For example, if you include **jchartfx.motif.hook.js**, you should also include 
 The Motifs that are currently included with jChartFX are:
 
 - jchartfx.motif.aurora.js
-- jchartfx.motif.darkrounded.js
+- jchartfx.motif.blinds.js
+- jchartfx.motif.block.js
+- jchartfx.motif.face.js
 - jchartfx.motif.glow.js
 - jchartfx.motif.handdrawn.js
 - jchartfx.motif.healthy.js
 - jchartfx.motif.hook.js
+- jchartfx.motif.jchartfx.js
 - jchartfx.motif.js
 - jchartfx.motif.lizard.js
+- jchartfx.motif.material.js
 - jchartfx.motif.metal.js
 - jchartfx.motif.metro.js
-- jchartfx.motif.sunken.js
+- jchartfx.motif.relief.js
+- jchartfx.motif.semantic.js
 - jchartfx.motif.topbar.js
+- jchartfx.motif.tree.js
 - jchartfx.motif.vibrant.js
 - jchartfx.motif.whitespace.js
+- jchartfx.motif.wireframe.js
 
 You can see an interactive demo of these motifs at [www.jchartfx.com/motifs](http://www.jchartfx.com/motifs "Motifs").
 
-###Full Chart Sample###
+### Full Chart Sample ###
 
 The code below compiles the snippets provided in this section into a fully functional page with a chart:
 
@@ -396,7 +433,6 @@ The code below compiles the snippets provided in this section into a fully funct
     &lt;link rel="stylesheet" type="text/css" href="styles/attributes/jchartfx.attributes.css"/&gt;
     &lt;link rel="stylesheet" type="text/css" href="styles/palettes/jchartfx.palette.css"/&gt;
     &lt;link rel="stylesheet" type="text/css" href="styles/jchartfx.userInterface.css"/&gt;
-
     &lt;script type="text/javascript" src="js/jchartfx.system.js"&gt;&lt;/script&gt;
     &lt;script type="text/javascript" src="js/jchartfx.coreVector.js"&gt;&lt;/script&gt;
     &lt;script type="text/javascript" src="js/jchartfx.advanced.js"&gt;&lt;/script&gt;

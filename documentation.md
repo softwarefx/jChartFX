@@ -16,4 +16,5 @@ The *API* reference is available online at:
 
 and the *Programmer's guide* is accessible online at:
 
-		http://www.jchartfx.com/pg
+		http://support.softwarefx.com/jChartFX/pg
+

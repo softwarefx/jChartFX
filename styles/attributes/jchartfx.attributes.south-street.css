@@ -1,13 +1,14 @@
 .jchartfx {
-    font-family: 'segoe ui', Arial, sans-serif;
+    font-family: 'Segoe UI', Arial, sans-serif;
     font-weight: normal;
     font-size: 8pt;
+    line-height: normal;
 }
 
 .jchartfxToolTip {
     padding: 3px;
     font-size: 8pt;
-    font-family: 'segoe ui', Arial, sans-serif;
+    font-family: 'Segoe UI', Arial, sans-serif;
     font-weight: bold;
     -moz-border-radius: 3px;
     border-radius: 3px;
@@ -113,23 +114,15 @@
     stroke-width: 1;
 }
 
-.jchartfx_gauge .Border {
-    stroke-width: 1;
-}
-
-.jchartfx_gauge .Text {
-    font-family: 'segoe ui', Arial, sans-serif;
-    font-weight: normal;
+.jchartfx .GaugeText {
     font-size: 10px;
 }
 
-.jchartfx_gauge .Title {
-    font-family: 'segoe ui', Arial, sans-serif;
-    font-weight: normal;
+.jchartfx .GaugeTitle {
     font-size: 12px;
 }
 
-.jchartfx_gauge .Separator {
+.jchartfx .Separator {
     stroke-width: 1;
 }
 
@@ -173,24 +166,17 @@
     stroke-width: 1;
 }
 
-.jchartfx_gauge .TitleLarge {
-    font-family: 'segoe ui', Arial, sans-serif;
+.jchartfx .GaugeTitleLarge {
     font-size: 40pt;
 }
 
 .jchartfx .DashboardTitle {
     font-size: 10.5pt;
-    font-family: 'segoe ui', Arial, sans-serif;
-}
-
-.jchartfx_gauge .DashboardTitle {
-    font-size: 10.5pt;
-    font-family: 'segoe ui', Arial, sans-serif;
 }
 
 .jchartfx_container, .jchartfx_container *
 {  
-    font-family: 'segoe ui', Arial, sans-serif; 
+    font-family: 'Segoe UI', Arial, sans-serif; 
 }
 
 .jchartfx_container table
@@ -239,14 +225,6 @@
     line-height:1em;
 }
 
-.jchartfx_gauge .BorderMedium {
-    stroke-width: 4;
-}
-
-.jchartfx_gauge .BorderThick {
-    stroke-width: 8;
-}
-
 .jchartfx .BorderMedium {
     stroke-width: 4;
 }
@@ -287,40 +265,12 @@
     stroke-width: 1;
 }
 
-.jchartfx_gauge .Border0 {
-    stroke-width: 1;
-}
-
-.jchartfx_gauge .Border1 {
-    stroke-width: 1;
-}
-
-.jchartfx_gauge .Border2 {
-    stroke-width: 1;
-}
-
-.jchartfx_gauge .Border3 {
-    stroke-width: 1;
-}
-
-.jchartfx_gauge .Border4 {
-    stroke-width: 1;
-}
-
-.jchartfx_gauge .Border5 {
-    stroke-width: 1;
-}
-
-.jchartfx_gauge .Border6 {
-    stroke-width: 1;
-}
-
-.jchartfx_gauge .Border7 {
-    stroke-width: 1;
-}
-
 .jchartfx-menu .cfxcombo {
-    font-family: 'segoe ui', Arial, sans-serif;
+    font-family: 'Segoe UI', Arial, sans-serif;
     font-weight: normal;
     font-size: 8pt;
+}
+
+.jchartfx .StackedLabel {
+	font-weight: bold;
 }
