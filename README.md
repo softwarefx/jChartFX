@@ -7,9 +7,7 @@
 
 ## Installation ##
 - Install with [Bower](http://bower.io "Bower"): `bower install jchartfx`
-- Install with [npm](https://www.npmjs.com/~softwarefx "npm"): ` npm install jchartfx` *[Node.js support is coming soon]*
 - Install with [NuGet](http://www.nuget.org/packages/jChartFX/ "NuGet"): `Install-Package jChartFX` 
-
 
 
 ### Reporting issues ###
@@ -65,7 +63,6 @@ You can obtain current and past versions of jChartFX for free from: [jChartFX Do
 You can also install the jChartFX package from: 
 
 - Bower
-- npm *[Node.js support is coming soon]*
 - NuGet  
 
 The jChartFX libraries have been split into several .js files to provide granular control over what you add as a reference in your html thus allowing you to limit what the browser downloads when the page is accessed.
